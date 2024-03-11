@@ -32,7 +32,7 @@ enableEmoji = true
   orgLocal = ""
   description = "A personal website."
   favicon = "/img/favicon.ico"
-  logo = "/img/sharingimg.png"
+  logo = ""
   mainSections = ["blog", "project", "talk"]
   navallcaps = true
   # show/hide social icons in site header & footer
