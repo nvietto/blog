@@ -4,8 +4,7 @@ subtitle: "PhD Candidate at University of Nebraska-Omaha"
 description: "I am a PhD candidate in the School of Criminology and Criminal Justice where my research centers on biopsychosocial criminology and quantitative methodology."
 images:
   - img/headshot.jpg
-image_left: true
-image_align_center: true
+image_left: false
 text_align_left: false
 show_social_links: true 
 type: home
