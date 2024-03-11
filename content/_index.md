@@ -5,7 +5,7 @@ description: "I'm a PhD candidate in the School of Criminology and Criminal Just
 images:
   - img/headshot.jpg
 image_left: false
-text_align_left: false
+text_align_left: true
 show_social_links: true 
 type: home
 ---
