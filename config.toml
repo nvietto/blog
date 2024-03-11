@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://main--frabjous-malabi-718c04.netlify.app/"
 theme = "hugo-apero"
 languageCode = "en"
 title = "Nicholas Vietto "
