@@ -29,7 +29,7 @@ enableEmoji = true
     
 [params]
   orgName = "Nicholas Vietto"
-  orgLocal = "Anywhere"
+  orgLocal = ""
   description = "A personal website."
   favicon = "/img/favicon.ico"
   logo = "/img/blogophonic-mark-dark.png"
@@ -48,7 +48,7 @@ enableEmoji = true
   # use a built-in color theme
   # one of: earth / forest / grayscale / magma / paper / peach / plum /
   #         poppy / primer / sky / violet / water 
-  theme = "sky"
+  theme = "paper"
   
   # or, leave theme empty & make your own palette
   # see docs at https://hugo-apero.netlify.app/blog/color-themes/
