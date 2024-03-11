@@ -38,9 +38,6 @@
     <loc>//localhost:4321/collection/day02/03-blogdown/</loc>
     <lastmod>2021-01-02T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>//localhost:4321/blog/</loc>
-    <lastmod>2021-01-28T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>//localhost:4321/categories/</loc>
     <lastmod>2021-01-28T00:00:00+00:00</lastmod>
   </url><url>
@@ -51,6 +48,9 @@
     <lastmod>2021-01-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:4321/categories/theme-features/</loc>
+    <lastmod>2021-01-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>//localhost:4321/blog/</loc>
     <lastmod>2021-01-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>//localhost:4321/tags/style/</loc>
