@@ -91,7 +91,7 @@ enableEmoji = true
       url       = "https://github.com/nvietto"
   [[params.social]]
       icon      = "google-scholar" 
-      icon_pack = "fab"
+      icon_pack = "ai"
       url       = "https://scholar.google.com/citations?user=de7ScEsAAAAJ&hl=en&oi=ao"
   [[params.social]]
       icon      = "linkedin" 
@@ -109,10 +109,6 @@ enableEmoji = true
       icon      = "orcid" 
       icon_pack = "ai"
       url       = "https://orcid.org/0000-0001-8835-2622"
-  [[params.social]]
-      icon      = "rss" 
-      icon_pack = "fas"
-      url       = "/blog/index.xml"
 
 [taxonomies]
   category = "categories"
@@ -151,6 +147,12 @@ enableEmoji = true
     title = "Element Page"
     url = "/elements/"
     weight = 6
+    
+  [[menu.footer]]
+    name = "License"
+    title = "License"
+    url = "/license/"
+    weight = 1
 
 # see https://gohugo.io/about/hugo-and-gdpr/    
 [privacy]
