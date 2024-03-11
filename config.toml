@@ -90,7 +90,7 @@ enableEmoji = true
       icon_pack = "fab"
       url       = "https://github.com/nvietto"
   [[params.social]]
-      icon      = "LinkedIn" # icon name without the 'fa-'
+      icon      = "linkedin-in" # icon name without the 'fa-'
       icon_pack = "fab"
       url       = "http://www.linkedin.com/in/nicholas-vietto"
   [[params.social]]
