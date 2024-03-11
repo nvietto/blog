@@ -1,4 +1,4 @@
-baseURL = "https://nvietto.netlify.app/"
+baseURL = "http://nvietto.rbind.io/"
 theme = "hugo-apero"
 languageCode = "en"
 title = "Nicholas Vietto "
@@ -31,7 +31,7 @@ enableEmoji = true
   orgName = "Nicholas Vietto"
   orgLocal = ""
   description = "A personal website."
-  favicon = "/img/favicon.ico"
+  favicon = "/img/sharingimg.ico"
   logo = ""
   mainSections = ["blog", "project", "talk"]
   navallcaps = true
