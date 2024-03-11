@@ -94,6 +94,10 @@ enableEmoji = true
       icon_pack = "fab"
       url       = "http://www.linkedin.com/in/nicholas-vietto"
   [[params.social]]
+      icon      = "mastodon" # icon name without the 'fa-'
+      icon_pack = "fab"
+      url       = "https://fosstodon.org/@nvietto"
+  [[params.social]]
       icon      = "twitter" # icon name without the 'fa-'
       icon_pack = "fab"
       url       = "https://twitter.com/ViettoNicholas"
