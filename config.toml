@@ -118,6 +118,11 @@ enableEmoji = true
 [menu]
   # Configure header 
   [[menu.header]]
+    name = "About"
+    title = "About"
+    url = "/"
+    weight = 1
+  [[menu.header]]
     name = "Blog"
     title = "Blog"
     url = "/blog/"
