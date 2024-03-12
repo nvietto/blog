@@ -1,6 +1,7 @@
 ---
 title: "Using pacman::p_load()"
 subtitle: "A convient way to load and install packages"
+excerpt:
 date: 2024-03-12
 author: "Nicholas Vietto"
 draft: false
