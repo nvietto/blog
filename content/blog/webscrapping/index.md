@@ -77,12 +77,12 @@ career_stats1 <- career_stats |>
 ```
 
 
+
 ![](tibble2.jpg)
 
 Next, we are going to rearrange some of our data table so the character variables are in front of our tibble.
 
 ```r
-
 # here I'm creating an object that holds the columns I want to move up front
 # we will find out soon why I want these up front
 
@@ -104,7 +104,6 @@ Now, we have to do some major cleaning of this data. We are going to rename, sli
 
 
 ```r 
-
 career_stats3 <- career_stats2 |>
   rename(games_played = games,  # making these columns a bit easier to understand and work with
          games_started = games_2,
@@ -127,12 +126,17 @@ career_stats3 <- career_stats2 |>
   mutate(across(4:19, as.numeric)) # Here's why we moved those other columns to the front, so we can easily convert the others to numerics
 
 
-# this creates a fun interactive table within the html file
+```
+
+### Optional  
+
+The next code chunk  will create an interactive table but it has to be implemented into an html file using RMarkdown/Quarto
+
+```r
 interactivetable <- career_stats3 |> 
   knitr::kable()
 
 interactivetable
-
 
 ```
 
@@ -154,7 +158,6 @@ mean(career_stats3$yards)
 [1] 3803.625
 
 ```r 
-
 mean(career_stats3$tds)
 
 ```
