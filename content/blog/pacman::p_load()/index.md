@@ -1,13 +1,12 @@
 ---
 title: "Using pacman::p_load()"
-subtitle: "A convenient way to load and install packages"
+subtitle: 
 excerpt: "A convenient way to load and install packages"
 date: 2024-03-12
 author: "Nicholas Vietto"
 draft: false
-tags:
-  - style
 layout: single
+image: pacman.jpg
 ---
 
 Loading and installing multiple packages can take up time and space at the beginning of your scripts. This is especially true when you're just starting out in R and you don't really understand what each package does. 
