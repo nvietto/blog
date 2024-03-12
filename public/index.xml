@@ -9,55 +9,6 @@
     <lastBuildDate>Tue, 12 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:4321/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Netlify</title>
-      <link>http://localhost:4321/collection/day02/01-netlify/</link>
-      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/collection/day02/01-netlify/</guid>
-      <description>So far, we&amp;rsquo;ve been leveraging GitHub Pages for publishing. This works great, but for blogdown we&amp;rsquo;ll start using Netlify. Let&amp;rsquo;s start RIGHT NOW with a site we&amp;rsquo;ve already built and published.&#xA;Pre-requisites Pick either your postcards site, or your distill site from day 01. Refresh your memory- which repository was it again?</description>
-    </item>
-    <item>
-      <title>A GitHub profile</title>
-      <link>http://localhost:4321/collection/day01/01-github/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/collection/day01/01-github/</guid>
-      <description>Profile https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/personalizing-your-profile&#xA;Pin projects to profile https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/pinning-items-to-your-profile&#xA;Profile README This is new! Let&amp;rsquo;s do it:&#xA;https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/managing-your-profile-readme</description>
-    </item>
-    <item>
-      <title>Prework</title>
-      <link>http://localhost:4321/collection/prework/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/collection/prework/</guid>
-      <description>Welcome to the Introducing Yourself Online workshop! We look forward to meeting you. Before attending the workshop, please complete the following prework.&#xA;Set up RStudio Cloud Sign up for a free RStudio Cloud account at https://rstudio.cloud/ before the workshop. I recommend logging in with an existing Google or GitHub account, if you have one (rather than creating a new account with another password you have to remember). I want you to be able to work from your own laptop in this workshop, but Cloud is an important back-up plan should you run into troubles.</description>
-    </item>
-    <item>
-      <title>A postcard</title>
-      <link>http://localhost:4321/collection/day01/02-postcards/</link>
-      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/collection/day01/02-postcards/</guid>
-      <description>Pre-requisites First, make sure you have the latest version of the postcards package installed from CRAN:&#xA;install.packages(&amp;#34;postcards&amp;#34;) Restart your R session. If you use RStudio, use the menu item Session &amp;gt; Restart R or the associated keyboard shortcut:&#xA;Ctrl + Shift + F10 (Windows and Linux) or Command + Shift + F10 (Mac OS). packageVersion(&amp;#34;postcards&amp;#34;) [1] ‘0.2.0’ Create GitHub repo Online.&#xA;Clone GitHub repo usethis::create_from_github(&amp;#34;https://github.com/apreshill/global-postcard.git&amp;#34;) &amp;#x2728; Commit &amp;amp; Push! &amp;#x2728;</description>
-    </item>
-    <item>
-      <title>Using blogdown</title>
-      <link>http://localhost:4321/collection/day02/02-blogdown/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/collection/day02/02-blogdown/</guid>
-      <description>Pre-requisites First, make sure you have the latest version of the blogdown package installed from CRAN:&#xA;install.packages(&amp;#34;blogdoown&amp;#34;) Restart your R session. If you use RStudio, use the menu item Session &amp;gt; Restart R or the associated keyboard shortcut:&#xA;Ctrl + Shift + F10 (Windows and Linux) or Command + Shift + F10 (Mac OS). packageVersion(&amp;#34;blogdown&amp;#34;) [1] ‘1.0’ Create GitHub repo Online.&#xA;Clone GitHub repo usethis::create_from_github(&amp;#34;https://github.com/apreshill/global-blogdown.git&amp;#34;) &amp;#x2728; Commit &amp;amp; Push! &amp;#x2728;</description>
-    </item>
-    <item>
-      <title>A distill site</title>
-      <link>http://localhost:4321/collection/day01/03-distill/</link>
-      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/collection/day01/03-distill/</guid>
-      <description>Pre-requisites First, make sure you have the latest version of the distill package installed from CRAN:&#xA;install.packages(&amp;quot;distill&amp;quot;) Restart your R session. If you use RStudio, use the menu item Session &amp;gt; Restart R or the associated keyboard shortcut:&#xA;Ctrl + Shift + F10 (Windows and Linux) or Command + Shift + F10 (Mac OS). packageVersion(&amp;#34;distill&amp;#34;) # [1] ‘1.2’ Create GitHub repo Online.&#xA;Clone GitHub repo usethis::create_from_github(&amp;quot;https://github.com/apreshill/global-distill.git&amp;quot;) &amp;#x2728; Commit &amp;amp; Push!</description>
-    </item>
-    <item>
-      <title>Warm woolen mittens</title>
-      <link>http://localhost:4321/collection/day02/03-blogdown/</link>
-      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/collection/day02/03-blogdown/</guid>
-      <description> Hi, I&#39;m the here-bot cat! Use me to find your way in your website.&#xA;Here I am: content/collection/day02/03-blogdown/index.md To remove me, delete this line inside that file: {{&amp;lt; here &amp;gt;}}&#xA;My content section is: collection My layout is: single-series part 2! does this work? now for some very cool things more get ready! </description>
-    </item>
-    <item>
       <title>Using pacman::p_load()</title>
       <link>http://localhost:4321/blog/pacmanp_load/</link>
       <pubDate>Tue, 12 Mar 2024 00:00:00 +0000</pubDate>
@@ -65,67 +16,18 @@
       <description>Loading and installing multiple packages can take up time and space at the beginning of your scripts, especially if you&amp;rsquo;re new to R and still getting familiar with what each package does.&#xA;For example, the beginning of my homework assignments in my second semester of Advance Statistics would often look like this:&#xA;# install.packages(&amp;#34;&amp;#34;) library(haven) library(tidyr) library(readr) library(dplyr) library(ggplot2) library(tigerstats) library(lattice) library(grid) library(mosaic) library(pastecs) library(car) library (multcomp) library(granova) library(polycor) library(yarrr) Which not only looks silly but also takes a significant amount of time to install each individually.</description>
     </item>
     <item>
-      <title>A campfire</title>
-      <link>http://localhost:4321/talk/campfire/</link>
-      <pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/talk/campfire/</guid>
-      <description>I&amp;rsquo;m really excited to give this talk! Stay tuned for video and slides.</description>
+      <title>Webscrapping HTML Tables</title>
+      <link>http://localhost:4321/blog/webscrapping/</link>
+      <pubDate>Tue, 12 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/blog/webscrapping/</guid>
+      <description>If you&amp;rsquo;re like me and have an unhealthy obsession for the NFL, you&amp;rsquo;ve probably thought it would be cool to have some data to mess around with and maybe even make some predictions. You could manually input data into an Excel spreadsheet, straining your eyes for hours on end, or you could use more efficient technique by web-scrapping with {rvest} in R.&#xA;Let&amp;rsquo;s scrape the career stats of Jared Goff from the Detroit Lions 🦁</description>
     </item>
     <item>
-      <title>A seedling</title>
-      <link>http://localhost:4321/talk/second-seedling/</link>
-      <pubDate>Fri, 01 Jan 2021 14:15:59 -0600</pubDate>
-      <guid>http://localhost:4321/talk/second-seedling/</guid>
+      <title>Creating Reproducible R Workflows in Quarto</title>
+      <link>http://localhost:4321/talk/quarto/</link>
+      <pubDate>Mon, 26 Feb 2024 10:00:00 -0600</pubDate>
+      <guid>http://localhost:4321/talk/quarto/</guid>
       <description></description>
-    </item>
-    <item>
-      <title>A seedling</title>
-      <link>http://localhost:4321/talk/seedling/</link>
-      <pubDate>Mon, 13 Jan 2020 14:15:59 -0600</pubDate>
-      <guid>http://localhost:4321/talk/seedling/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tachyons for Style</title>
-      <link>http://localhost:4321/project/giraffes/</link>
-      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/project/giraffes/</guid>
-      <description>Tachyons is a design system that allows you to design gorgeous interfaces in the browser with little effort. Because Speed Building this static site generator theme was the first time I used an Atomic (or Functional) CSS system like Tachyons. It&amp;rsquo;s a design system that provides very small (which means fast) CSS modules that you can use in your HTML. So, rather than writing every line of CSS, you apply the style you need as you write your HTML with easy to understand shorthand class names.</description>
-    </item>
-    <item>
-      <title>Palmer Penguins</title>
-      <link>http://localhost:4321/project/penguins/</link>
-      <pubDate>Tue, 02 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/project/penguins/</guid>
-      <description>“Grid is the very first CSS module created specifically to solve the layout problems we&amp;rsquo;ve all been hacking our way around for as long as we&amp;rsquo;ve been making websites.” — Chris House, A Complete Guide to CSS Grid Layout 1&#xA;Since I began building websites in Y2K, I&amp;rsquo;ve lost count how many times the phrase &amp;ldquo;&amp;hellip;there&amp;rsquo;s got to be a better way to do this&amp;rdquo; has passed my lips. Most times, while fighting with floats and widths of content and sidebars or just basically trying to get something beside something else without using a stupid TABLE.</description>
-    </item>
-    <item>
-      <title>Bakeoff</title>
-      <link>http://localhost:4321/project/bakeoff/</link>
-      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/project/bakeoff/</guid>
-      <description>Formspree makes it easy to receive submissions from HTML forms on your static website. Functional Form This theme has a form-to-email feature built in, thanks to the simple Formspree integration. All you need to activate the form is a valid recipient email address saved in the front matter of the form (/content/forms/contact.md). Of course, the example shown below (your@email.here) must not be used. Please use your actual email address.</description>
-    </item>
-    <item>
-      <title>Contact</title>
-      <link>http://localhost:4321/contact/</link>
-      <pubDate>Mon, 25 Feb 2019 13:38:41 -0600</pubDate>
-      <guid>http://localhost:4321/contact/</guid>
-      <description>** Contact page don&amp;rsquo;t contain a body, just the front matter above. See form.html in the layouts folder.&#xA;Formspree requires a (free) account and new form to be set up. The link is made on the final published url in the field: Restrict to Domain. It is possible to register up to 2 emails free and you can select which one you want the forms to go to within Formspree in the Settings tab.</description>
-    </item>
-    <item>
-      <title>Typography Styles &amp; Element Examples</title>
-      <link>http://localhost:4321/elements/</link>
-      <pubDate>Mon, 18 Feb 2019 12:27:33 -0600</pubDate>
-      <guid>http://localhost:4321/elements/</guid>
-      <description>Font Sizes A A A A A A A A 6rem&#xA;(96px) 5rem&#xA;(80px) 3rem&#xA;(48px) 2.25rem&#xA;(36px) 1.5rem&#xA;(24px) 1.25rem&#xA;(20px) 1rem&#xA;(16px) .875rem&#xA;(14px) Type Samples Head&amp;shy;line Sub&amp;shy;head&amp;shy;line Level 1 Heading One page to rule them all...well, not really. This page displays sample typography and page elements to illustrate their style. Things like headings and paragraphs showing the beautiful type scale, form elements, tabular data, and image layouts just to name a few.</description>
-    </item>
-    <item>
-      <title>Contributors</title>
-      <link>http://localhost:4321/contributors/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/contributors/</guid>
-      <description>Thank you to all the folks who have contributed both technical and creative skills to this project:&#xA;Desirée De Leon &amp;#x1f992; (designed 5 of the custom color themes, made illustrations for the workshop, and provided general aesthetic feedback along the way)&#xA;Garrick Aden-Buie &amp;#x1f9d9; (debugged headroom.js and lent his panelset.js code to the theme)&#xA;Allison Horst &amp;#x1f415; (awesome illustrations of campfires, seedlings, and evergreens, as well as my R Markdown hedgehog mascot &amp;#x1f994;)</description>
     </item>
     <item>
       <title>License</title>

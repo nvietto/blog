@@ -12,8 +12,6 @@ cascade:
   show_author_byline: true
   show_post_date: true
   show_comments: true
-image:
-- pacman.png
 ---
 
 
