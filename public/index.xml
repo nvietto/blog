@@ -29,12 +29,5 @@
       <guid>http://localhost:4321/talk/quarto/</guid>
       <description></description>
     </item>
-    <item>
-      <title>License</title>
-      <link>http://localhost:4321/license/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/license/</guid>
-      <description>My blog posts are released under a Creative Commons Attribution-ShareAlike 4.0 International License.</description>
-    </item>
   </channel>
 </rss>

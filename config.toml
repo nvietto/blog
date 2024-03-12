@@ -148,12 +148,6 @@ enableEmoji = true
     url = "/resume/"
     weight = 6
     
-  [[menu.footer]]
-    name = "License"
-    title = "License"
-    url = "/license/"
-    weight = 1
-
 # see https://gohugo.io/about/hugo-and-gdpr/    
 [privacy]
   [privacy.disqus]
