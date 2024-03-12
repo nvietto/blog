@@ -6,20 +6,19 @@ date: 2024-03-12
 author: "Nicholas Vietto"
 draft: false
 layout: single
-image: pacman.jpg
 ---
 
-Loading and installing multiple packages can take up time and space at the beginning of your scripts. This is especially true when you're just starting out in R and you don't really understand what each package does. 
-
-
+Loading and installing multiple packages can take up time and space at the beginning of your scripts, especially if you're new to R and still getting familiar with what each package does.  
 
 For example, the beginning of my homework assignments in my second semester of Advance Statistics would often look like this:
 
+<br>
+
 ``` r
+# install.packages("")
 
 library(haven)
 library(tidyr)
-library(foreign)
 library(readr)
 library(dplyr)
 library(ggplot2)
@@ -28,49 +27,60 @@ library(lattice)
 library(grid)
 library(mosaic)
 library(pastecs)
+library(car)
+library (multcomp)
+library(granova)
+library(polycor)
+library(yarrr)
 
 
 ``` 
 
+<br>
 
-Which not only looks silly but also takes a significant amount of time to install each individually. BUT there is an easy solution to this problem - the pacman package. 
+Which not only looks silly but also takes a significant amount of time to install each individually. 
 
 
+But there is an easy solution to this problem - the pacman package. 
+
+<br>
 
 ``` r
-
 # first install 
+
 install.packages("pacman")
-
-# Now you can use pacman::p_load
-
 
 ```
 
-Quick note: 
+<br>
 
-Since some packages have multiple functions we can use the :: operator to specify the specific function we are calling within the package. 
+Since some packages have multiple functions we can use the :: operator to specify the specific function we are calling within the package.This is good to know in cases where packages have similar dependencies and loading them together can potentially mask functions.
 
-package::functionname
+<br>
+
+
  
- 
- 
- ``` r
- 
- pacman::p_load(tidyverse, tigerstats, lattice, grid, mosaic, car, multcomp)
- 
- ```
- 
-This looks way better AND it installs the packages (even multiple) you don't have. So you can skip the install.package("tidyverse") and library (tidyverse) lingo.
+``` r
+# load and install your libraries
+
+pacman::p_load(tidyverse, haven, tigerstats, lattice, grid, mosaic, pastecs, car, multcomp, granova, polycor, yarrr)
+
+```
+
+<br>
+
+This looks way better AND it installs the packages (even multiple) you don't have. So you can skip the install.packages("haven") and library (haven) lingo.
+
+For more information on the pacman functions check out the [documentation](https://cran.r-project.org/web/packages/pacman/readme/README.html).
+
+<br>
+
+
+*Hopefully this saves you a bit of time.* 
 
 
 
 
-Hopefully this saves you a bit of time. 
 
-
-References: 
-
-https://www.rdocumentation.org/packages/pacman/versions/0.5.1
 
 
