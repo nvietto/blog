@@ -1,6 +1,6 @@
 ---
 title: "Nicholas Vietto"
-subtitle: "PhD Candidate at University of Nebraska-Omaha"
+subtitle: "PhD Candidate at the University of Nebraska-Omaha"
 description: "I'm a PhD candidate in the School of Criminology and Criminal Justice where my research centers on biopsychosocial criminology and quantitative methodology."
 images:
   - img/headshot.jpg
