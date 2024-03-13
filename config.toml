@@ -37,7 +37,7 @@ enableEmoji = true
   navallcaps = true
   socialInHeader = false
   socialInFooter = true
-  sharing_image = "/img/sharingimg.jpg"
+  sharing_image = [img/sharingimg.png]
   twitter = "ViettoNicholas"
   
   # use a built-in color theme
