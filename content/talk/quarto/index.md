@@ -8,8 +8,6 @@ featured: true
 show_post_time: false
 draft: false
 layout: single
-categories:
-- workshop
 links:
 - icon: github
   icon_pack: fab
