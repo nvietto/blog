@@ -173,7 +173,7 @@ mean(career_stats3$tds)
 There are legalities to consider before scraping any website. Although if it is public domain like [Wikipedia](https://en.m.wikipedia.org/wiki/Wikipedia:Copyrights), you're probably ok. But please refer to [this](https://r4ds.hadley.nz/webscraping) section in the R4DS book for more information. They do a much better job explaining things than me.  
 
 
-IF you want to learn more about {rvest} check out [R for Data Science (2e)](https://r4ds.hadley.nz/).
+If you want to learn more about {rvest} check out [R for Data Science (2e)](https://r4ds.hadley.nz/).
 
 
 
