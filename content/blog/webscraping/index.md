@@ -1,5 +1,5 @@
 ---
-title: "Webscrapping HTML Tables"
+title: "Web Scraping HTML Tables"
 subtitle: This is a tutorial on how to scrape a basic HTML table from Wikipedia, with a focus on my favorite team - the Detroit Lions.
 excerpt: "A tutorial on how to use {rvest}"
 date: 2024-03-12
