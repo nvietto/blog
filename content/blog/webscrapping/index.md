@@ -1,7 +1,7 @@
 ---
 title: "Webscrapping HTML Tables"
-subtitle: 
-excerpt: ""
+subtitle: This is a tutorial on how to scrape a basic HTML table from Wikipedia, with a focus on my favorite team - the Detroit Lions.
+excerpt: "A tutorial on how to use {rvest}"
 date: 2024-03-12
 author: "Nicholas Vietto"
 draft: false
@@ -9,8 +9,7 @@ layout: single
 ---
 
 
-If you're like me and have an unhealthy obsession for the NFL, you've probably thought it would be cool to have some data to mess around with and maybe even make some predictions. You could manually input data into an Excel spreadsheet, straining your eyes for hours on end, or you could use more efficient technique by web-scrapping with {rvest} in R.
-
+If you share my passion for NFL stats, you might have considered getting some data to analyze or even predict outcomes. Instead of tediously inputting data into Excel, you can opt for a more efficient method: web scraping with {rvest} in R.
 
 Let's scrape the career stats of Jared Goff from the Detroit Lions 🦁
 
@@ -46,7 +45,7 @@ goffstats <- read_html(goffstats_url) |>
 
 
 
-TThere are many tricks to locating the correct html table. Pulling up the object (i.e., goffstats) from the environment and then examining the value column to find the correct dimensions of the table you want from the website you scraped (i.e., the wiki page) is my preferred method. 
+There are many tricks to locating the correct html table. Pulling up the object (i.e., goffstats) from the environment and then examining the value column to find the correct dimensions of the table you want from the website you scraped (i.e., the wiki page) is my preferred method. 
 
 For example, head [here](https://en.wikipedia.org/wiki/Jared_Goff) and scroll down to NFL career statistics then regular season and count the rows and columns. After you have a decent idea of the dimensions, head to your object (i.e., goff_stats) and try to match the dimensions. Object **[[6]]** with the **value 10 x 23** is the one we want so we create a new object with that information. 
 
@@ -165,11 +164,16 @@ mean(career_stats3$tds)
 [1] 23.125
 
 
+<p style="text-align: center;">
+<img src="https://media.giphy.com/media/ysuapgxHI7hzfxMjU3/giphy.gif" alt="Centered Image">
+</p>
 
-![](https://media.giphy.com/media/ysuapgxHI7hzfxMjU3/giphy.gif)
+## Final Remarks
+
+There are legalities to consider before scraping any website. Although if it is public domain like [Wikipedia](https://en.m.wikipedia.org/wiki/Wikipedia:Copyrights), you're probably ok. But please refer to [this](https://r4ds.hadley.nz/webscraping) section in the R4DS book for more information. They do a much better job explaining things than me.  
 
 
-
+IF you want to learn more about {rvest} check out [R for Data Science (2e)](https://r4ds.hadley.nz/).
 
 
 

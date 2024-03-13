@@ -20,7 +20,7 @@
       <link>http://localhost:4321/blog/webscrapping/</link>
       <pubDate>Tue, 12 Mar 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:4321/blog/webscrapping/</guid>
-      <description>If you&amp;rsquo;re like me and have an unhealthy obsession for the NFL, you&amp;rsquo;ve probably thought it would be cool to have some data to mess around with and maybe even make some predictions. You could manually input data into an Excel spreadsheet, straining your eyes for hours on end, or you could use more efficient technique by web-scrapping with {rvest} in R.&#xA;Let&amp;rsquo;s scrape the career stats of Jared Goff from the Detroit Lions 🦁</description>
+      <description>If you share my passion for NFL stats, you might have considered getting some data to analyze or even predict outcomes. Instead of tediously inputting data into Excel, you can opt for a more efficient method: web scraping with {rvest} in R.&#xA;Let&amp;rsquo;s scrape the career stats of Jared Goff from the Detroit Lions 🦁&#xA;Set up &amp;amp; Scrape Lets install and load our packages.&#xA;We will need the tidyverse and janitor packages.</description>
     </item>
   </channel>
 </rss>

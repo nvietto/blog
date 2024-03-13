@@ -9,7 +9,7 @@ show_post_time: true
 show_button_links: true
 layout: list
 cascade:
-  author: "The R Markdown Team @RStudio"
+  author: 
   show_author_byline: true
   show_post_date: true
   show_post_time: true
