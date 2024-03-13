@@ -8,7 +8,7 @@ show_post_date: true
 layout: list 
 cascade:
   type: blog
-  author: "Alison Hill"
+  author: "Nicholas Vietto"
   show_author_byline: true
   show_post_date: true
   show_comments: true

@@ -32,4 +32,3 @@ links:
   <img src="Week18.jpg" alt="Centered Image">
 </p>
 
-
