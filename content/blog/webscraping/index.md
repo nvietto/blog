@@ -18,7 +18,7 @@ Let's scrape the career stats of Jared Goff from the Detroit Lions 🦁
 Lets install and load our packages.
 
 
-We will need the [**tidyverse**](https://www.tidyverse.org/) and [**janitor**](https://cran.r-project.org/web/packages/janitor/vignettes/janitor.html) packages. 
+We will need the [**tidyverse**](https://www.tidyverse.org/), [**rvest**](https://rvest.tidyverse.org), and [**janitor**](https://cran.r-project.org/web/packages/janitor/vignettes/janitor.html) packages. 
 
 
 ```r

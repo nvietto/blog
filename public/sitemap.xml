@@ -11,11 +11,8 @@
     <loc>http://localhost:4321/blog/pacmanp_load/</loc>
     <lastmod>2024-03-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/blog/webscrapping/</loc>
+    <loc>http://localhost:4321/blog/webscraping/</loc>
     <lastmod>2024-03-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:4321/categories/</loc>
-    <lastmod>2024-02-26T10:00:00-06:00</lastmod>
   </url><url>
     <loc>http://localhost:4321/talk/quarto/</loc>
     <lastmod>2024-02-26T10:00:00-06:00</lastmod>
@@ -23,8 +20,7 @@
     <loc>http://localhost:4321/talk/</loc>
     <lastmod>2024-02-26T10:00:00-06:00</lastmod>
   </url><url>
-    <loc>http://localhost:4321/categories/workshop/</loc>
-    <lastmod>2024-02-26T10:00:00-06:00</lastmod>
+    <loc>http://localhost:4321/categories/</loc>
   </url><url>
     <loc>http://localhost:4321/viz/</loc>
   </url><url>
