@@ -9,7 +9,7 @@ disqusShortname = ""
 metaDataFormat = "yaml"
 footnoteReturnLinkContents = "&#8617;" # ↩
 # set deliberately low for testing choose your preffered number based on the blog layout you've chosen
-paginate = 5
+paginate = 8 
 preserveTaxonomyNames = true
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\\.md$"]
 enableEmoji = true
@@ -135,13 +135,13 @@ enableEmoji = true
     title = "Talks"
     url = "/talk/"
     weight = 3
-  [[menu.header]]
-    name = "Data Visualizations"
-    title = "Data Visualizations"
-    url = "/viz/"
+  [[menu.header]] 
+    name = "Projects"
+    title = "Project Portfolio"
+    url = "/project/"
     weight = 4
 
-    
+  
 # see https://gohugo.io/about/hugo-and-gdpr/    
 [privacy]
   [privacy.disqus]

@@ -1,0 +1,41 @@
+---
+title: "Data Visualizations"
+subtitle: "Selected contributions to the #TidyTuesday data challenge"
+excerpt: "Some of my contributions to the #TidyTuesday data challenge"
+weight: 7
+author: "Nicholas Vietto"
+draft: false
+categories:
+  - example
+# layout options: single or single-sidebar
+layout: single
+links:
+- icon: github
+  icon_pack: fab
+  name: source
+  url:  https://github.com/nvietto/TidyTuesday/tree/main
+---
+
+Tidy Tuesday is a weekly social data challenge in R, where participants use a new data set each week to create a data visualization and share their work on social media with #TidyTuesday. For more information on how to participate head [here](https://github.com/rfordatascience/tidytuesday).
+
+<br>
+
+<p style="text-align: center;">
+  <img src="Week28.jpg" alt="Centered Image">
+</p>
+
+<p style="text-align: center;">
+  <img src="Week27.jpg" alt="Centered Image">
+</p>
+
+<p style="text-align: center;">
+  <img src="Week23.jpg" alt="Centered Image">
+</p>
+
+<p style="text-align: center;">
+  <img src="Week21.jpg" alt="Centered Image">
+</p>
+
+<p style="text-align: center;">
+  <img src="Week18.jpg" alt="Centered Image">
+</p>
