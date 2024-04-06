@@ -19,7 +19,7 @@ Hexadecimals, or 'hex codes,' operate on a number system with a base value of 16
 There are some great online resources like [ColorHexa](https://www.colorhexa.com/), [this color cheatsheet](https://www.nceas.ucsb.edu/sites/default/files/2020-04/colorPaletteCheatsheet.pdf), or just [Google](https://www.google.com/search?client=firefox-b-1-d&q=aqua+hex+color+code) in general. However, another way to locate them within your RStudio IDE is by utilizing the {scales} package and the col2hcl function. Let's walk through some steps to see how.
 
 
-### Install
+### Install and load
 
 ```r
 # install.packages("scales")
@@ -40,7 +40,7 @@ colors(distinct = TRUE)
 ![](cols.jpg)
 
 
-**Use show_col and col2hcl to show the color code**
+Use show_col and col2hcl to show the color code.
 
 
 ```r
@@ -100,7 +100,7 @@ show_col(col2hcl(tomatoes, c = seq( 0, 100, length = 6)))
 ```
 ![](chroma2.jpg)
 
-A much better variation to choose from.
+A better variation to choose from.
 
 If we want to look at variations in the intensity of our 🍅s we can use the **luminance** or **l** argument. 
 
@@ -121,6 +121,6 @@ BA1F00 and F85D3F are looking like suitable 🍅s.
 
 ## Final thoughts
 
-Like anything in R, there's a million ways to do one thing and this is just another option to locating your color codes. Hopefully this was helpful and thanks for stopping by. For more information, check out [modify standard R colour in hcl colour space](https://scales.r-lib.org/reference/col2hcl.html#ref-examples).
+Like anything in R, there's a million ways to do one thing and this is just another option to locating your color codes. For more information, check out [modify standard R colour in hcl colour space](https://scales.r-lib.org/reference/col2hcl.html#ref-examples).
 
 
