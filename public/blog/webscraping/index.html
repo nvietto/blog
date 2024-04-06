@@ -44,12 +44,12 @@
     
     
   <meta itemprop="name" content="Web Scraping HTML Tables">
-<meta itemprop="description" content="If you share my passion for NFL stats, you might have considered getting some data to analyze or even predict outcomes. Instead of tediously inputting data into Excel, you can opt for a more efficient method: web scraping with {rvest} in R.
+<meta itemprop="description" content="If you share my passion for NFL stats, you might have considered getting some data to analyze or even predict outcomes. Instead of tediously inputting data into Excel, you can opt for a more efficient method - web scraping with {rvest} in R.
 Let&rsquo;s scrape the career stats of Jared Goff from the Detroit Lions 🦁
 Set up &amp; Scrape Lets install and load our packages.
 We will need the tidyverse, rvest, and janitor packages."><meta itemprop="datePublished" content="2024-03-12T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2024-03-12T00:00:00+00:00" />
-<meta itemprop="wordCount" content="714"><meta itemprop="image" content="http://localhost:4321/blog/webscraping/feature.jpg" />
+<meta itemprop="wordCount" content="711"><meta itemprop="image" content="http://localhost:4321/blog/webscraping/feature.jpg" />
 <meta itemprop="keywords" content="" />
   
   <!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -92,7 +92,7 @@ We will need the tidyverse, rvest, and janitor packages."><meta itemprop="datePu
         
         
         
-      <a class="link f6 f5-l dib pv1 ph2 " href="/viz/" title="Data Visualizations">Data Visualizations</a>
+      <a class="link f6 f5-l dib pv1 ph2 " href="/project/" title="Project Portfolio">Projects</a>
       
       
     </div>
@@ -112,7 +112,7 @@ We will need the tidyverse, rvest, and janitor packages."><meta itemprop="datePu
 
       </header>
       <section class="post-body pt5 pb4">
-        <p>If you share my passion for NFL stats, you might have considered getting some data to analyze or even predict outcomes. Instead of tediously inputting data into Excel, you can opt for a more efficient method: web scraping with {rvest} in R.</p>
+        <p>If you share my passion for NFL stats, you might have considered getting some data to analyze or even predict outcomes. Instead of tediously inputting data into Excel, you can opt for a more efficient method - web scraping with {rvest} in R.</p>
 <p>Let&rsquo;s scrape the career stats of Jared Goff from the Detroit Lions 🦁</p>
 
 
@@ -140,8 +140,7 @@ We will need the tidyverse, rvest, and janitor packages."><meta itemprop="datePu
 </span></span><span style="display:flex;"><span>goffstats <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">read_html</span>(goffstats_url) <span style="color:#000;font-weight:bold">|&gt;</span> 
 </span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">html_table</span>()
 </span></span></code></pre></div><p><strong>Note:</strong> If you’re curious what html_table() does, copy and paste the following code into your console and press enter: <strong>?html_table</strong></p>
-<p>There are many tricks to locating the correct html table. Pulling up the object (i.e., goffstats) from the environment and then examining the value column to find the correct dimensions of the table you want from the website you scraped (i.e., the wiki page) is my preferred method.</p>
-<p>For example, head 
+<p>One effective method for finding the right HTML table involves pulling up the object (i.e., goffstats) from the environment and then examining the value column to find the correct dimensions of the table you want from the website you scraped (i.e., the wiki page). For example, head 
 <a href="https://en.wikipedia.org/wiki/Jared_Goff" target="_blank" rel="noopener">here</a> and scroll down to NFL career statistics then regular season and count the rows and columns. After you have a decent idea of the dimensions, head to your object (i.e., goff_stats) and try to match the dimensions. Object <strong>[[6]]</strong> with the <strong>value 10 x 23</strong> is the one we want so we create a new object with that information.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>career_stats <span style="color:#000;font-weight:bold">&lt;-</span> goffstats[[6]]
 </span></span></code></pre></div><p><img src="tibble.jpg" alt=""></p>
@@ -255,7 +254,7 @@ We will need the tidyverse, rvest, and janitor packages."><meta itemprop="datePu
   </dl>
   <dl class="f6 lh-copy">
     <dt class="fw7">Length:</dt>
-    <dd class="fw5 ml0">4 minute read, 714 words</dd>
+    <dd class="fw5 ml0">4 minute read, 711 words</dd>
   </dl>
   
   
