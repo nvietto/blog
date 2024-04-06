@@ -9,7 +9,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="generator" content="Hugo 0.123.8">
-<title>Locating Hex Codes with {col2hcl} | Nicholas Vietto </title>
+<title>Understanding hex codes and col2hcl | Nicholas Vietto </title>
 
 
 <meta property="twitter:site" content="@ViettoNicholas">
@@ -24,12 +24,12 @@
   
     
   
-<meta name="description" content="This is a tutorial on hexadecimals color codes in R.">
+<meta name="description" content="A tutorial on how to use col2hcl">
 
 
 <meta property="og:site_name" content="Nicholas Vietto ">
-<meta property="og:title" content="Locating Hex Codes with {col2hcl} | Nicholas Vietto ">
-<meta property="og:description" content="This is a tutorial on hexadecimals color codes in R." />
+<meta property="og:title" content="Understanding hex codes and col2hcl | Nicholas Vietto ">
+<meta property="og:description" content="A tutorial on how to use col2hcl" />
 <meta property="og:type" content="page" />
 <meta property="og:url" content="http://localhost:4321/blog/col2hcl/" />
 <meta property="og:locale" content="en">
@@ -38,17 +38,15 @@
 
 
     
-        <meta property="og:image" content="http://localhost:4321/blog/col2hcl/feature.jpg" >
+        <meta property="og:image" content="http://localhost:4321/blog/col2hcl/featured.jpg" >
         <meta property="twitter:card" content="summary_large_image">
-        <meta name="twitter:image" content="http://localhost:4321/blog/col2hcl/feature.jpg" >
+        <meta name="twitter:image" content="http://localhost:4321/blog/col2hcl/featured.jpg" >
     
     
-  <meta itemprop="name" content="Locating Hex Codes with {col2hcl}">
-<meta itemprop="description" content="What are hexcodes? The hexadecimal number system is a type of number system, that has a base value equal to 16.]
-It is also pronounced sometimes as &lsquo;hex&rsquo;. Hexadecimal numbers are represented by only 16 symbols. These symbols or values are 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E and F. Each digit represents a decimal value.
-Hexadecimal codes or &lsquo;hexcodes&rsquo; represent colors as a combination of red, green, and blue (RGB) values, where each color is represented by a two-digit hexadecimal number ranging from 00 to FF."><meta itemprop="datePublished" content="2024-03-12T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2024-03-12T00:00:00+00:00" />
-<meta itemprop="wordCount" content="114"><meta itemprop="image" content="http://localhost:4321/blog/col2hcl/feature.jpg" />
+  <meta itemprop="name" content="Understanding hex codes and col2hcl">
+<meta itemprop="description" content="What are hexcodes? Hexadecimals, or &lsquo;hex codes,&rsquo; operate on a number system with a base value of 16, hence the term &lsquo;hex.&rsquo; In R, we use them to integrate colors into plots, presentations, websites or really anything. These codes represent colors through a blend of red, green, and blue (RGB) values, where each color is denoted by a two-digit hexadecimal number ranging from 00 (representing the absence of color) to FF (representing the maximum intensity)."><meta itemprop="datePublished" content="2024-04-06T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2024-04-06T00:00:00+00:00" />
+<meta itemprop="wordCount" content="563"><meta itemprop="image" content="http://localhost:4321/blog/col2hcl/featured.jpg" />
 <meta itemprop="keywords" content="" />
   
   <!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -91,7 +89,7 @@ Hexadecimal codes or &lsquo;hexcodes&rsquo; represent colors as a combination of
         
         
         
-      <a class="link f6 f5-l dib pv1 ph2 " href="/viz/" title="Data Visualizations">Data Visualizations</a>
+      <a class="link f6 f5-l dib pv1 ph2 " href="/project/" title="Project Portfolio">Projects</a>
       
       
     </div>
@@ -102,10 +100,10 @@ Hexadecimal codes or &lsquo;hexcodes&rsquo; represent colors as a combination of
   <section class="page-content mw7 center">
     <article class="post-content pa0 ph4-l">
       <header class="post-header">
-        <h1 class="f1 lh-solid measure-narrow mb3 fw4">Locating Hex Codes with {col2hcl}</h1>
-        <h4 class="f4 mt0 mb4 lh-title measure">This is a tutorial on hexadecimals color codes in R.</h4>
+        <h1 class="f1 lh-solid measure-narrow mb3 fw4">Understanding hex codes and col2hcl</h1>
+        
         <p class="f6 measure lh-copy mv1">By Nicholas Vietto</p>
-        <p class="f7 db mv0 ttu">March 12, 2024</p>
+        <p class="f7 db mv0 ttu">April 6, 2024</p>
 
       
 
@@ -115,22 +113,115 @@ Hexadecimal codes or &lsquo;hexcodes&rsquo; represent colors as a combination of
 
 
 
-<h1 id="what-are-hexcodes">What are hexcodes?
-  <a href="#what-are-hexcodes"></a>
-</h1>
-<p>The hexadecimal number system is a type of number system, that has a base value equal to 16.]</p>
-<p>It is also pronounced sometimes as &lsquo;hex&rsquo;. Hexadecimal numbers are represented by only 16 symbols. These symbols or values are 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E and F. Each digit represents a decimal value.</p>
-<p>Hexadecimal codes or &lsquo;hexcodes&rsquo; represent colors as a combination of red, green, and blue (RGB) values, where each color is represented by a two-digit hexadecimal number ranging from 00 to FF. For example, if we wanted a pure red color we would use #FF0000 or for a pure green #00FF00.</p>
+<h2 id="what-are-hexcodes">What are hexcodes?
+  <a href="#what-are-hexcodes"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<p>Hexadecimals, or &lsquo;hex codes,&rsquo; operate on a number system with a base value of 16, hence the term &lsquo;hex.&rsquo; In R, we use them to integrate colors into plots, presentations, websites or really anything. These codes represent colors through a blend of red, green, and blue (RGB) values, where each color is denoted by a two-digit hexadecimal number ranging from 00 (representing the absence of color) to FF (representing the maximum intensity). For instance, if we would like a pure red color, we&rsquo;d utilize #FF0000, for green, #00FF00, or for blue, #0000FF. Similarly, we can produce a yellow shade with #FFFF00 or an aqua tone with #00FFFF. Additionally, we can use any number from 0 to 9 and any letter from A to F. For example, orange corresponds to #FFA500, while tomato red is represented by #FF6347.</p>
+
+
+
+
+<h2 id="where-do-we-locate-them">Where do we locate them?
+  <a href="#where-do-we-locate-them"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<p>There are some great online resources like 
+<a href="https://www.colorhexa.com/" target="_blank" rel="noopener">ColorHexa</a>, 
+<a href="https://www.nceas.ucsb.edu/sites/default/files/2020-04/colorPaletteCheatsheet.pdf" target="_blank" rel="noopener">this color cheatsheet</a>, or just 
+<a href="https://www.google.com/search?client=firefox-b-1-d&amp;q=aqua&#43;hex&#43;color&#43;code" target="_blank" rel="noopener">Google</a> in general. However, another way to locate them within your RStudio IDE is by utilizing the {scales} package and the col2hcl function. Let&rsquo;s walk through some steps to see how.</p>
+
+
+
+
+<h3 id="install">Install
+  <a href="#install"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#998;font-style:italic"># install.packages(&#34;scales&#34;)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">library</span>(scales)
+</span></span></code></pre></div>
+
+
+
+<h3 id="find-a-color">Find a color
+  <a href="#find-a-color"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">colors</span>(distinct <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">TRUE</span>)
+</span></span></code></pre></div><p><img src="cols.jpg" alt=""></p>
+<p><strong>Use show_col and col2hcl to show the color code</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">show_col</span>(<span style="color:#900;font-weight:bold">col2hcl</span>(<span style="color:#d14">&#34;royalblue&#34;</span>))
+</span></span></code></pre></div><p><img src="blue.jpg" alt=""></p>
+<p>Boom! Now that we&rsquo;ve got our color code, let&rsquo;s explore further. There&rsquo;s a handy method for looking up multiple color codes and adjusting the hue, chroma, and luminance if the exact color you&rsquo;re seeking isn&rsquo;t readily available.</p>
+
+
+
+
+<h3 id="lets-check-out-some-variations-in-tomato--colors">Let&rsquo;s check out some variations in tomato 🍅 colors!
+  <a href="#lets-check-out-some-variations-in-tomato--colors"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>tomatoes <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">rep</span>(<span style="color:#d14">&#34;tomato&#34;</span>, <span style="color:#099">6</span>) <span style="color:#998;font-style:italic"># we have to create a vector here to allow multiple to show</span>
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">show_col</span>(<span style="color:#900;font-weight:bold">col2hcl</span>(tomatoes, h <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">seq</span>( <span style="color:#099">0</span>, <span style="color:#099">25</span>, length <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">6</span>))) <span style="color:#998;font-style:italic"># we are modifying our hue here</span>
+</span></span></code></pre></div><p><img src="tomato.jpg" alt=""></p>
+<p>Lets break this down.</p>
+<p><strong>show_col</strong> allows the visualization to occur in R.</p>
+<p><strong>col2hcl</strong>  is responsible for providing us with the hexadecimal codes for colors.</p>
+<ul>
+<li>We throw in our vector (i.e, our 🍅)</li>
+<li>Then we can modify our hue a bit with <strong>seq</strong> and any number between [0, 360]</li>
+<li>It&rsquo;s a good idea to keep the 0 at the start, and for a broader range of similar colors, keep the next number (or the range between the two) small.</li>
+</ul>
+<p><strong>length</strong> this just lets R know how many color we want to show.</p>
+<p><strong>h</strong> or hue, ff you want to vary the color slightly.</p>
+<p>We can also modify our <strong>chroma</strong> and/or <strong>luminance</strong>.</p>
+<p>If you want the intensity to change we can use the chroma argument. We use a similar process as before but this time we use “c”. The range for chroma is [0, 100]</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">show_col</span>(<span style="color:#900;font-weight:bold">col2hcl</span>(tomatoes, c <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">seq</span>( <span style="color:#099">0</span>, <span style="color:#099">25</span>, length <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">6</span>))) 
+</span></span></code></pre></div><p><img src="chroma1.jpg" alt=""></p>
+<p>Yikes, wouldn&rsquo;t want to eat those tomatoes.</p>
+<p>Let max the argument out and see what happens.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">show_col</span>(<span style="color:#900;font-weight:bold">col2hcl</span>(tomatoes, c <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">seq</span>( <span style="color:#099">0</span>, <span style="color:#099">100</span>, length <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">6</span>))) 
+</span></span></code></pre></div><p><img src="chroma2.jpg" alt=""></p>
+<p>A much better variation to choose from.</p>
+<p>If we want to look at variations in the intensity of our 🍅s we can use the <strong>luminance</strong> or <strong>l</strong> argument.</p>
+<p>Our luminescence range is [0, 100]</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">show_col</span>(<span style="color:#900;font-weight:bold">col2hcl</span>(tomatoes, l <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">seq</span>( <span style="color:#099">0</span>, <span style="color:#099">100</span>, length <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">6</span>))) 
+</span></span></code></pre></div><p><img src="lum.jpg" alt=""></p>
+<p>BA1F00 and F85D3F are looking like suitable 🍅s.</p>
+
+
+
+
+<h2 id="final-thoughts">Final thoughts
+  <a href="#final-thoughts"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h2>
+<p>Like anything in R, there&rsquo;s a million ways to do one thing and this is just another option to locating your color codes. Hopefully this was helpful and thanks for stopping by. For more information, check out 
+<a href="https://scales.r-lib.org/reference/col2hcl.html#ref-examples" target="_blank" rel="noopener">modify standard R colour in hcl colour space</a>.</p>
 
         
         <details closed class="f6 fw7 input-reset">
   <dl class="f6 lh-copy">
     <dt class="fw7">Posted on:</dt>
-    <dd class="fw5 ml0">March 12, 2024</dd>
+    <dd class="fw5 ml0">April 6, 2024</dd>
   </dl>
   <dl class="f6 lh-copy">
     <dt class="fw7">Length:</dt>
-    <dd class="fw5 ml0">1 minute read, 114 words</dd>
+    <dd class="fw5 ml0">3 minute read, 563 words</dd>
   </dl>
   
   

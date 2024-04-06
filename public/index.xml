@@ -6,7 +6,7 @@
     <description>Recent content in Nicholas Vietto on Nicholas Vietto </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 12 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 Apr 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:4321/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Teaching</title>
@@ -20,7 +20,7 @@
       <link>http://localhost:4321/project/publications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:4321/project/publications/</guid>
-      <description>Below, you&amp;rsquo;ll find a list of my publications. While it&amp;rsquo;s on my to do list to make them accessible on an open-access platform, please don&amp;rsquo;t hesitate to reach out if you encounter a paywall and require a copy. I&amp;rsquo;m happy to help.&#xA;Biopsychosocial Criminology Armstrong, T. A., Boisvert, D. L., Wells, J., Lewis, R. H., Cooke, E. M., Woeckener, M., Kavish, N., Vietto, N., &amp;amp; Harper, J. M. (2022). Testosterone, cortisol, and criminal behavior in men and women.</description>
+      <description>Below, you&amp;rsquo;ll find a list of my publications. It&amp;rsquo;s on my to do list to make these accessible on an open-access platform, please don&amp;rsquo;t hesitate to reach out if you encounter a paywall and require a copy. I&amp;rsquo;m happy to help.&#xA;Biopsychosocial Criminology Armstrong, T. A., Boisvert, D. L., Wells, J., Lewis, R. H., Cooke, E. M., Woeckener, M., Kavish, N., Vietto, N., &amp;amp; Harper, J. M. (2022). Testosterone, cortisol, and criminal behavior in men and women.</description>
     </item>
     <item>
       <title>Data Visualizations</title>
@@ -35,6 +35,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:4321/project/packages/</guid>
       <description>These are some fun packages I&amp;rsquo;ve created for R users.&#xA;nopunintended nopunintended is a package designed to take your mind off coding with puns from &amp;lsquo;No Pun Intended: Volume Too&amp;rsquo; in the show/video game &amp;lsquo;The Last of Us&amp;rsquo;. Check it out here.&#xA;movienight movienight is a package that recommend a film within RStudio. Check it out here.</description>
+    </item>
+    <item>
+      <title>Understanding hex codes and col2hcl</title>
+      <link>http://localhost:4321/blog/col2hcl/</link>
+      <pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/blog/col2hcl/</guid>
+      <description>What are hexcodes? Hexadecimals, or &amp;lsquo;hex codes,&amp;rsquo; operate on a number system with a base value of 16, hence the term &amp;lsquo;hex.&amp;rsquo; In R, we use them to integrate colors into plots, presentations, websites or really anything. These codes represent colors through a blend of red, green, and blue (RGB) values, where each color is denoted by a two-digit hexadecimal number ranging from 00 (representing the absence of color) to FF (representing the maximum intensity).</description>
     </item>
     <item>
       <title>Using pacman::p_load()</title>

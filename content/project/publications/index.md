@@ -9,7 +9,7 @@ layout: single
 
 ---
 
-Below, you'll find a list of my publications. While it's on my to do list to make them accessible on an open-access platform, please don't hesitate to reach out if you encounter a paywall and require a copy. I'm happy to help.
+Below, you'll find a list of my publications. It's on my to do list to make these accessible on an open-access platform, please don't hesitate to reach out if you encounter a paywall and require a copy. I'm happy to help.
 
 
 ## Biopsychosocial Criminology 

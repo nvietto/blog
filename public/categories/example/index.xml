@@ -12,14 +12,14 @@
       <link>http://localhost:4321/project/teaching/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:4321/project/teaching/</guid>
-      <description>This page contains the course material for courses I have taught. You are free to use them.&#xA;Research Methods This is an undergraduate criminology and criminal justice research methods course.&#xA;The repository for coure material can be found here.&#xA;Statistics This is an undergraduate criminology and criminal justice applied statistics course.&#xA;The repository for coure material can be found here.</description>
+      <description>This page contains the teaching material for courses I have taught and developed. At the links below, you&amp;rsquo;ll find slides, assignments, and other resources. Feel free to use them.&#xA;Research Methods This is an undergraduate criminology and criminal justice research methods course.&#xA;The repository for course material can be found here.&#xA;Statistics This is an undergraduate criminology and criminal justice applied statistics course.&#xA;The repository for course material can be found here.</description>
     </item>
     <item>
       <title>Data Visualizations</title>
       <link>http://localhost:4321/project/data-visulation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:4321/project/data-visulation/</guid>
-      <description>Tidy Tuesday is a weekly social data challenge in R where users explore a new data set each week and share their findings on social media with #TidyTuesday. For more information on how to participate head here.</description>
+      <description>Tidy Tuesday is a weekly social data challenge in R, where participants use a new data set each week to create a data visualization and share their work on social media with #TidyTuesday. For more information on how to participate head here.</description>
     </item>
   </channel>
 </rss>
