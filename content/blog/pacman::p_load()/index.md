@@ -76,9 +76,6 @@ For more information on the pacman functions check out the [documentation](https
 <br>
 
 
-*Hopefully this saves you a bit of time.* 
-
-
 
 
 
