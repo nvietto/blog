@@ -5,8 +5,6 @@ excerpt: "Some of my contributions to the #TidyTuesday data challenge"
 weight: 7
 author: "Nicholas Vietto"
 draft: false
-categories:
-  - example
 # layout options: single or single-sidebar
 layout: single
 links:

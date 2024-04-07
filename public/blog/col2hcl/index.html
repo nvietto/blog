@@ -46,7 +46,7 @@
   <meta itemprop="name" content="Understanding hex codes and col2hcl">
 <meta itemprop="description" content="What are hexcodes? Hexadecimals, or &lsquo;hex codes,&rsquo; operate on a number system with a base value of 16, hence the term &lsquo;hex.&rsquo; In R, we use them to integrate colors into plots, presentations, websites or really anything. These codes represent colors through a blend of red, green, and blue (RGB) values, where each color is denoted by a two-digit hexadecimal number ranging from 00 (representing the absence of color) to FF (representing the maximum intensity)."><meta itemprop="datePublished" content="2024-04-06T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2024-04-06T00:00:00+00:00" />
-<meta itemprop="wordCount" content="563"><meta itemprop="image" content="http://localhost:4321/blog/col2hcl/featured.jpg" />
+<meta itemprop="wordCount" content="555"><meta itemprop="image" content="http://localhost:4321/blog/col2hcl/featured.jpg" />
 <meta itemprop="keywords" content="" />
   
   <!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -138,8 +138,8 @@
 
 
 
-<h3 id="install">Install
-  <a href="#install"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<h3 id="install-and-load">Install and load
+  <a href="#install-and-load"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="currentColor"></path>
       <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
     </svg></a>
@@ -159,7 +159,7 @@
 </h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">colors</span>(distinct <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">TRUE</span>)
 </span></span></code></pre></div><p><img src="cols.jpg" alt=""></p>
-<p><strong>Use show_col and col2hcl to show the color code</strong></p>
+<p>Use show_col and col2hcl to show the color code.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">show_col</span>(<span style="color:#900;font-weight:bold">col2hcl</span>(<span style="color:#d14">&#34;royalblue&#34;</span>))
 </span></span></code></pre></div><p><img src="blue.jpg" alt=""></p>
 <p>Boom! Now that we&rsquo;ve got our color code, let&rsquo;s explore further. There&rsquo;s a handy method for looking up multiple color codes and adjusting the hue, chroma, and luminance if the exact color you&rsquo;re seeking isn&rsquo;t readily available.</p>
@@ -194,7 +194,7 @@
 <p>Let max the argument out and see what happens.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">show_col</span>(<span style="color:#900;font-weight:bold">col2hcl</span>(tomatoes, c <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">seq</span>( <span style="color:#099">0</span>, <span style="color:#099">100</span>, length <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">6</span>))) 
 </span></span></code></pre></div><p><img src="chroma2.jpg" alt=""></p>
-<p>A much better variation to choose from.</p>
+<p>A better variation to choose from.</p>
 <p>If we want to look at variations in the intensity of our 🍅s we can use the <strong>luminance</strong> or <strong>l</strong> argument.</p>
 <p>Our luminescence range is [0, 100]</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">show_col</span>(<span style="color:#900;font-weight:bold">col2hcl</span>(tomatoes, l <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">seq</span>( <span style="color:#099">0</span>, <span style="color:#099">100</span>, length <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">6</span>))) 
@@ -210,7 +210,7 @@
       <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
     </svg></a>
 </h2>
-<p>Like anything in R, there&rsquo;s a million ways to do one thing and this is just another option to locating your color codes. Hopefully this was helpful and thanks for stopping by. For more information, check out 
+<p>Like anything in R, there&rsquo;s a million ways to do one thing and this is just another option to locating your color codes. For more information, check out 
 <a href="https://scales.r-lib.org/reference/col2hcl.html#ref-examples" target="_blank" rel="noopener">modify standard R colour in hcl colour space</a>.</p>
 
         
@@ -221,7 +221,7 @@
   </dl>
   <dl class="f6 lh-copy">
     <dt class="fw7">Length:</dt>
-    <dd class="fw5 ml0">3 minute read, 563 words</dd>
+    <dd class="fw5 ml0">3 minute read, 555 words</dd>
   </dl>
   
   

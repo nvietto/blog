@@ -16,7 +16,7 @@ Hexadecimals, or 'hex codes,' operate on a number system with a base value of 16
 
 ## Where do we locate them? 
 
-There are some great online resources like [ColorHexa](https://www.colorhexa.com/), [this color cheatsheet](https://www.nceas.ucsb.edu/sites/default/files/2020-04/colorPaletteCheatsheet.pdf), or just [Google](https://www.google.com/search?client=firefox-b-1-d&q=aqua+hex+color+code) in general. However, another way to locate them within your RStudio IDE is by utilizing the {scales} package and the col2hcl function. Let's walk through some steps to see how.
+There are some great online resources like [ColorHexa](https://www.colorhexa.com/), [this color cheatsheet](https://www.nceas.ucsb.edu/sites/default/files/2020-04/colorPaletteCheatsheet.pdf), or just [Google](https://www.google.com/search?client=firefox-b-1-d&q=aqua+hex+color+code) in general. However, another way to locate them within your RStudio IDE is utilizing the {scales} package and the col2hcl function. Let's walk through some steps to see how.
 
 
 ### Install and load
@@ -52,7 +52,7 @@ show_col(col2hcl("royalblue"))
 ![](blue.jpg)
 
 
-Boom! Now that we've got our color code, let's explore further. There's a handy method for looking up multiple color codes and adjusting the hue, chroma, and luminance if the exact color you're seeking isn't readily available.
+Boom! Now that we've got our color code, let's explore further. There's a similar method for looking up multiple color codes and adjusting the hue, chroma, and luminance if the exact color you want isn't known.
 
 ### Let's check out some variations in tomato 🍅 colors!
 
@@ -70,18 +70,16 @@ Lets break this down.
 
 **col2hcl**  is responsible for providing us with the hexadecimal codes for colors.
 
-* We throw in our vector (i.e, our 🍅)
-* Then we can modify our hue a bit with **seq** and any number between [0, 360]
-* It's a good idea to keep the 0 at the start, and for a broader range of similar colors, keep the next number (or the range between the two) small. 
+* We throw in our vector (i.e, our 🍅).
+* Then we can modify our hue a bit with **seq** and any number between [0, 360].
 
 **length** this just lets R know how many color we want to show. 
 
 **h** or hue, ff you want to vary the color slightly.
 
-
 We can also modify our **chroma** and/or **luminance**.
 
-If you want the intensity to change we can use the chroma argument. We use a similar process as before but this time we use “c”. The range for chroma is [0, 100]
+If you want the intensity to change we can use the chroma argument. We use a similar process as before but this time we use “c”. The range for chroma is [0, 100].
 
 ```r
 show_col(col2hcl(tomatoes, c = seq( 0, 25, length = 6))) 
@@ -92,7 +90,7 @@ show_col(col2hcl(tomatoes, c = seq( 0, 25, length = 6)))
 
 Yikes, wouldn't want to eat those tomatoes. 
 
-Let max the argument out and see what happens.
+Lets max the argument out and see what happens.
 
 ```r
 show_col(col2hcl(tomatoes, c = seq( 0, 100, length = 6))) 
