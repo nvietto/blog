@@ -13,7 +13,7 @@
       <link>http://localhost:4321/blog/col2hcl/</link>
       <pubDate>Sat, 06 Apr 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:4321/blog/col2hcl/</guid>
-      <description>What are hexcodes? Hexadecimals, or &amp;lsquo;hex codes,&amp;rsquo; operate on a number system with a base value of 16, hence the term &amp;lsquo;hex.&amp;rsquo; In R, we use them to integrate colors into plots, presentations, websites or really anything. These codes represent colors through a blend of red, green, and blue (RGB) values, where each color is denoted by a two-digit hexadecimal number ranging from 00 (representing the absence of color) to FF (representing the maximum intensity).</description>
+      <description>What are hex codes? Hexadecimals, or &amp;lsquo;hex codes,&amp;rsquo; operate on a number system with a base value of 16, hence the term &amp;lsquo;hex.&amp;rsquo; In R, we use them to integrate colors into plots, presentations, websites or really anything. These codes represent colors through a blend of red, green, and blue (RGB) values, where each color is denoted by a two-digit hexadecimal number ranging from 00 (representing the absence of color) to FF (representing the maximum intensity).</description>
     </item>
     <item>
       <title>Using pacman::p_load()</title>
