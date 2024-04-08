@@ -1,5 +1,5 @@
 ---
-title: Thoughts on R Thing
+title: Thoughts on R Things
 description: 
 author: "Nicholas Vietto"
 show_header: true
