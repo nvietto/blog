@@ -8,8 +8,8 @@ show_author_byline: true
 show_post_date: true
 layout: list-sidebar
 sidebar: 
-  title: "**Bite-Sized R Tutorials**"
-  description: Additional links for R resources.
+  title: "**Thoughts on R Things**"
+  description: This blog contains bite-sized R tutorials for beginners. I've also added additional links for R resources below.
   
   
     - [RBloggers](https://www.r-bloggers.com/) 
