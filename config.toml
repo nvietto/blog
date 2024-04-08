@@ -110,8 +110,13 @@ enableEmoji = true
       url       = "/img/cv.pdf"
   [[params.social]]
       icon      = "file" 
-      icon_pack = "far"
+      icon_pack = "fas"
       url       = "/img/Resume.pdf"
+  [[params.social]]
+      icon      = "rss" 
+      icon_pack = "fas"
+      url       = "/blog/index.xml"
+  
 
 [taxonomies]
   category = "categories"
