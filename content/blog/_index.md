@@ -4,7 +4,7 @@ description:
 author: "Nicholas Vietto"
 show_header: true
 show_post_thumbnail: true
-show_author_byline: true
+show_author_byline: false
 show_post_date: true
 layout: list-sidebar
 sidebar: 

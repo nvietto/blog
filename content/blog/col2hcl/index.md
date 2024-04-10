@@ -71,11 +71,12 @@ Lets break this down.
 **col2hcl**  is responsible for providing us with the hexadecimal codes for colors.
 
 * We throw in our vector (i.e, our 🍅).
-* Then we can modify our hue a bit with **seq** and any number between [0, 360].
+
+**h** or hue, which modifies the color slightly
+* Then we can modify our hue a bit with **seq** any number between [0, 360].
 
 **length** this just lets R know how many color we want to show. 
 
-**h** or hue, ff you want to vary the color slightly.
 
 We can also modify our **chroma** and/or **luminance**.
 
