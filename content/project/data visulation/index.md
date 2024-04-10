@@ -10,7 +10,7 @@ layout: single
 links:
 - icon: github
   icon_pack: fab
-  name: source
+  name: Code
   url:  https://github.com/nvietto/TidyTuesday/tree/main
 ---
 

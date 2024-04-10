@@ -9,11 +9,7 @@ categories:
   - example
 # layout options: single or single-sidebar
 layout: single
-links:
-- icon: github
-  icon_pack: fab
-  name: source
-  url: https://github.com/nvietto/Teaching/tree/main
+
 ---
 
 This page contains the teaching material for courses I have taught and developed. At the links below, you'll find slides, assignments, and other resources. Feel free to use them. 
@@ -29,11 +25,11 @@ This page contains the teaching material for courses I have taught and developed
 This is an undergraduate criminology and criminal justice research methods course.
 
 
-The repository for course material can be found [here](https://github.com/nvietto/Teaching/tree/main/CRCJ-2510).
+GitHub: https://github.com/nvietto/Teaching/tree/main/CRCJ-2510
 
 
 
-### Statistics
+### Applied Statistics
 
 <p style="text-align: center;">
   <img src="statistics.jpg" alt="Centered Image">
@@ -42,7 +38,7 @@ The repository for course material can be found [here](https://github.com/nviett
 
 This is an undergraduate criminology and criminal justice applied statistics course.
 
-The repository for course material can be found [here](https://github.com/nvietto/Teaching/tree/main/CRCJ-3000).
+GitHub: https://github.com/nvietto/Teaching/tree/main/CRCJ-3000
 
 
 

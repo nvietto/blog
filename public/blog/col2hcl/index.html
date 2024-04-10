@@ -46,7 +46,7 @@
   <meta itemprop="name" content="Understanding hex codes and col2hcl">
 <meta itemprop="description" content="What are hex codes? Hexadecimals, or &lsquo;hex codes,&rsquo; operate on a number system with a base value of 16, hence the term &lsquo;hex.&rsquo; In R, we use them to integrate colors into plots, presentations, websites or really anything. These codes represent colors through a blend of red, green, and blue (RGB) values, where each color is denoted by a two-digit hexadecimal number ranging from 00 (representing the absence of color) to FF (representing the maximum intensity)."><meta itemprop="datePublished" content="2024-04-06T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2024-04-06T00:00:00+00:00" />
-<meta itemprop="wordCount" content="524"><meta itemprop="image" content="http://localhost:4321/blog/col2hcl/featured.jpg" />
+<meta itemprop="wordCount" content="520"><meta itemprop="image" content="http://localhost:4321/blog/col2hcl/featured.jpg" />
 <meta itemprop="keywords" content="" />
   
   <!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -181,10 +181,12 @@
 <p><strong>col2hcl</strong>  is responsible for providing us with the hexadecimal codes for colors.</p>
 <ul>
 <li>We throw in our vector (i.e, our 🍅).</li>
-<li>Then we can modify our hue a bit with <strong>seq</strong> and any number between [0, 360].</li>
+</ul>
+<p><strong>h</strong> or hue, which modifies the color slightly</p>
+<ul>
+<li>Then we can modify our hue a bit with <strong>seq</strong> any number between [0, 360].</li>
 </ul>
 <p><strong>length</strong> this just lets R know how many color we want to show.</p>
-<p><strong>h</strong> or hue, ff you want to vary the color slightly.</p>
 <p>We can also modify our <strong>chroma</strong> and/or <strong>luminance</strong>.</p>
 <p>If you want the intensity to change we can use the chroma argument. We use a similar process as before but this time we use “c”. The range for chroma is [0, 100].</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">show_col</span>(<span style="color:#900;font-weight:bold">col2hcl</span>(tomatoes, c <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">seq</span>( <span style="color:#099">0</span>, <span style="color:#099">25</span>, length <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">6</span>))) 
@@ -220,7 +222,7 @@
   </dl>
   <dl class="f6 lh-copy">
     <dt class="fw7">Length:</dt>
-    <dd class="fw5 ml0">3 minute read, 524 words</dd>
+    <dd class="fw5 ml0">3 minute read, 520 words</dd>
   </dl>
   
   

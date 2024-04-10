@@ -1,6 +1,6 @@
 ---
 title: "Web Scraping HTML Tables"
-subtitle: This is a tutorial on how to scrape a basic HTML table from Wikipedia, with a focus on my favorite team - the Detroit Lions.
+subtitle: ""
 excerpt: "A tutorial on how to use {rvest}"
 date: 2024-03-12
 author: "Nicholas Vietto"
@@ -11,7 +11,9 @@ layout: single
 
 If you share my passion for NFL stats, you might have considered getting some data to analyze or even predict outcomes. Instead of tediously inputting data into Excel, you can opt for a more efficient method - web scraping with {rvest} in R.
 
-Let's scrape the career stats of Jared Goff from the Detroit Lions 🦁
+Let's scrape the career stats of Jared Goff from my favorite team - the Detroit Lions 🦁
+
+
 
 ## Set up & Scrape
 

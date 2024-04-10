@@ -12,7 +12,7 @@
       <link>http://localhost:4321/project/teaching/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:4321/project/teaching/</guid>
-      <description>This page contains the teaching material for courses I have taught and developed. At the links below, you&amp;rsquo;ll find slides, assignments, and other resources. Feel free to use them.&#xA;Research Methods This is an undergraduate criminology and criminal justice research methods course.&#xA;The repository for course material can be found here.&#xA;Statistics This is an undergraduate criminology and criminal justice applied statistics course.&#xA;The repository for course material can be found here.</description>
+      <description>This page contains the teaching material for courses I have taught and developed. At the links below, you&amp;rsquo;ll find slides, assignments, and other resources. Feel free to use them.&#xA;Research Methods This is an undergraduate criminology and criminal justice research methods course.&#xA;GitHub: https://github.com/nvietto/Teaching/tree/main/CRCJ-2510&#xA;Applied Statistics This is an undergraduate criminology and criminal justice applied statistics course.&#xA;GitHub: https://github.com/nvietto/Teaching/tree/main/CRCJ-3000</description>
     </item>
     <item>
       <title>Publications</title>
@@ -33,7 +33,7 @@
       <link>http://localhost:4321/project/packages/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:4321/project/packages/</guid>
-      <description>These are some fun packages I&amp;rsquo;ve created for R users.&#xA;nopunintended nopunintended is a package designed to take your mind off coding with puns from &amp;lsquo;No Pun Intended: Volume Too&amp;rsquo; in the show/video game &amp;lsquo;The Last of Us&amp;rsquo;. Check it out here.&#xA;movienight movienight is a package that recommend a film within RStudio. Check it out here.</description>
+      <description>These are some fun packages I&amp;rsquo;ve created for R users.&#xA;nopunintended nopunintended is a package designed to take your mind off coding with puns from &amp;lsquo;No Pun Intended: Volume Too&amp;rsquo; in the show/video game &amp;lsquo;The Last of Us&amp;rsquo;.&#xA;GitHub: https://github.com/nvietto/nopunintended&#xA;movienight movienight is a package that recommend a film within RStudio.&#xA;GitHub: https://github.com/nvietto/movienight</description>
     </item>
   </channel>
 </rss>

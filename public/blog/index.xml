@@ -27,7 +27,7 @@
       <link>http://localhost:4321/blog/webscraping/</link>
       <pubDate>Tue, 12 Mar 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:4321/blog/webscraping/</guid>
-      <description>If you share my passion for NFL stats, you might have considered getting some data to analyze or even predict outcomes. Instead of tediously inputting data into Excel, you can opt for a more efficient method - web scraping with {rvest} in R.&#xA;Let&amp;rsquo;s scrape the career stats of Jared Goff from the Detroit Lions 🦁&#xA;Set up &amp;amp; Scrape Lets install and load our packages.&#xA;We will need the tidyverse, rvest, and janitor packages.</description>
+      <description>If you share my passion for NFL stats, you might have considered getting some data to analyze or even predict outcomes. Instead of tediously inputting data into Excel, you can opt for a more efficient method - web scraping with {rvest} in R.&#xA;Let&amp;rsquo;s scrape the career stats of Jared Goff from my favorite team - the Detroit Lions 🦁&#xA;Set up &amp;amp; Scrape Lets install and load our packages.</description>
     </item>
   </channel>
 </rss>
