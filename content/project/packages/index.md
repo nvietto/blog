@@ -30,7 +30,7 @@ GitHub: https://github.com/nvietto/nopunintended
   <img src="movie.jpg" alt="Centered Image">
 </p>
 
-movienight is a package that recommend a film within RStudio.
+movienight is a package that recommends a film within RStudio.
 
 GitHub: https://github.com/nvietto/movienight
 
