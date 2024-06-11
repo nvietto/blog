@@ -87,7 +87,7 @@ enableEmoji = true
   [[params.social]]
       icon      = "google-scholar" 
       icon_pack = "ai"
-      url       = "https://scholar.google.com/citations?user=de7ScEsAAAAJ&hl=en&oi=ao"
+      url       = "https://scholar.google.com/citations?user=mIhQO2wAAAAJ&hl=en"
   [[params.social]]
       icon      = "linkedin" 
       icon_pack = "fab"
