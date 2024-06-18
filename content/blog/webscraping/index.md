@@ -9,7 +9,7 @@ layout: single
 ---
 
 
-If you share my passion for NFL stats, you might have considered getting some data to analyze or even predict outcomes. Instead of tediously inputting data into Excel, you can opt for a more efficient method - web scraping with {rvest} in R.
+If you share my passion for NFL stats, you might have considered analyzing data to predict outcomes. Instead of inputting data into Excel, you can opt for a more efficient method - web scraping with {rvest} in R.
 
 Let's scrape the career stats of Jared Goff from my favorite team - the Detroit Lions 🦁
 
