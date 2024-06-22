@@ -41,6 +41,3 @@ Tidy Tuesday is a weekly social data challenge in R, where participants use a ne
   <img src="Week23.jpg" alt="Centered Image">
 </p>
 
-<p style="text-align: center;">
-  <img src="Week21.jpg" alt="Centered Image">
-</p>
