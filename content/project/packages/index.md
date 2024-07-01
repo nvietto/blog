@@ -11,10 +11,21 @@ layout: single
 
 These are some fun packages I've created for R users.
 
+
+### [Rdune](https://github.com/nvietto/Rdune)
+
+<p style="text-align: center;">
+  <img src="Rdune.jpg" alt="Centered Image" style="width: 250px;">
+</p>
+
+
+The {Rdune} package offers a unique collection of color palettes inspired by "Dune," designed for use in data visualizations and graphics with ggplot2.
+
+
 ### [nopunintended](https://github.com/nvietto/nopunintended)
 
 <p style="text-align: center;">
-  <img src="last.jpg" alt="Centered Image">
+  <img src="last.jpg" alt="Centered Image" style="width: 250px;">
 </p>
 
 
@@ -27,7 +38,7 @@ GitHub: https://github.com/nvietto/nopunintended
 
 
 <p style="text-align: center;">
-  <img src="movie.jpg" alt="Centered Image">
+  <img src="movie.jpg" alt="Centered Image"style="width: 250px;">
 </p>
 
 movienight is a package that recommends a film within RStudio.
