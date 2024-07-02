@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=4321&amp;path=livereload" data-no-instant defer></script>
+  
+                           
+     
+
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.123.8">
+<title>Introducing {Rdune} | Nicholas Vietto </title>
+
+
+<meta property="twitter:site" content="@ViettoNicholas">
+<meta property="twitter:creator" content="@ViettoNicholas">
+
+
+
+
+
+
+
+  
+    
+  
+<meta name="description" content="Introducing the {Rdune} color palettes for {ggplot2}">
+
+
+<meta property="og:site_name" content="Nicholas Vietto ">
+<meta property="og:title" content="Introducing {Rdune} | Nicholas Vietto ">
+<meta property="og:description" content="Introducing the {Rdune} color palettes for {ggplot2}" />
+<meta property="og:type" content="page" />
+<meta property="og:url" content="http://localhost:4321/blog/rdune/" />
+<meta property="og:locale" content="en">
+
+
+
+
+    
+        <meta property="og:image" content="http://localhost:4321/blog/rdune/featured.jpg" >
+        <meta property="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="http://localhost:4321/blog/rdune/featured.jpg" >
+    
+    
+  <meta itemprop="name" content="Introducing {Rdune}">
+<meta itemprop="description" content="Want to add some &ldquo;spice&rdquo; to your {ggplot2} data visualizations? You&rsquo;re in the right place! I&rsquo;m excited to introduce {Rdune}, a collection of 18 color palettes inspired by &ldquo;Dune.&rdquo;
+Image: giphy.com How to install and load Currently, only the developmental version of {Rdune} is available on GitHub. If you&rsquo;re unfamiliar with how to download a developmental version of an R library, simply follow these steps:
+Install {devtools} install.packages(&#34;devtools&#34;) Load {devtools} library(devtools) Install {Rdune} from GitHub devtools::install_github(&#34;nvietto/Rdune&#34;) Load {Rdune} library(Rdune) Now that {Rdune} is installed, you can load it like any other R library in the future using library(Rdune)."><meta itemprop="datePublished" content="2024-07-02T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2024-07-02T00:00:00+00:00" />
+<meta itemprop="wordCount" content="350"><meta itemprop="image" content="http://localhost:4321/blog/rdune/featured.jpg" />
+<meta itemprop="keywords" content="" />
+  
+  <!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link rel="shortcut icon" href="/img/sharingimg.ico" type="image/x-icon">
+  <link rel="icon" href="/img/sharingimg.ico" type="image/x-icon">
+  
+  
+  <link rel="stylesheet" href="/style.main.min.15ce1fdcdc730ce3749ab98d348b143d01b48377bf4a0a3cc92f2338ef0b01ab.css" integrity="sha256-Fc4f3NxzDON0mrmNNIsUPQG0g3e/Sgo8yS8jOO8LAas=" media="screen">
+  
+  
+  <script src="/panelset.min.ed1ac24b6e16f4e2481e3d1d098ae66f5bc77438aef619e6e266d8ac5b00dc72.js" type="text/javascript"></script>
+  
+  
+  <script src="/main.min.ff136b72b64f66013b501d97a8211b2c53be9c4a71a5815e02c065107a49c45d.js" type="text/javascript"></script>
+</head>
+<body>
+      <div class="grid-container single">
+<header class="site-header pt4 pb2 mb4 bb b--transparent ph5 headroom z-max" role="banner">
+  <nav class="site-nav db dt-l w-100" role="navigation">
+    <a class="site-brand db dtc-l v-mid link no-underline w-100 w-33-l tc tl-l" href="http://localhost:4321/" title="Home">
+      <span class="f4 fw7">Nicholas Vietto </span>
+    </a>
+    <div class="site-links db dtc-l v-mid w-100 w-47-l tc tr-l mt3 mt0-l ttu tracked">
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/" title="About">About</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 active" href="/blog/" title="Blog">Blog</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/talk/" title="Talks">Talks</a>
+      
+        
+        
+        
+      <a class="link f6 f5-l dib pv1 ph2 " href="/project/" title="Project Portfolio">Projects</a>
+      
+      
+    </div>
+  </nav>
+</header>
+
+<main class="page-main pa4" role="main">
+  <section class="page-content mw7 center">
+    <article class="post-content pa0 ph4-l">
+      <header class="post-header">
+        <h1 class="f1 lh-solid measure-narrow mb3 fw4">Introducing {Rdune}</h1>
+        
+        <p class="f6 measure lh-copy mv1">By Nicholas Vietto</p>
+        <p class="f7 db mv0 ttu">July 2, 2024</p>
+
+      
+
+      </header>
+      <section class="post-body pt5 pb4">
+        <p>Want to add some &ldquo;spice&rdquo; to your {ggplot2} data visualizations? You&rsquo;re in the right place! I&rsquo;m excited to introduce {Rdune}, a collection of 18 color palettes inspired by &ldquo;Dune.&rdquo;</p>
+<p align="center">
+    <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXMwMXU1bzM1cTJmOGkyNXRrdjhqZ24zb3NqNG9ocHZzZnFwdDFvNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/57Ioe1rrA1fpjLLMSK/giphy.gif" width="60%"><br>
+    <small>Image: <a href="https://giphy.com">giphy.com</a></small>
+</p>
+
+
+
+
+<h3 id="how-to-install-and-load">How to install and load
+  <a href="#how-to-install-and-load"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<p>Currently, only the developmental version of {Rdune} is available on 
+<a href="https://github.com/nvietto/Rdune" target="_blank" rel="noopener">GitHub</a>. If you&rsquo;re unfamiliar with how to download a developmental version of an R library, simply follow these steps:</p>
+<ol>
+<li>Install {devtools}</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">install.packages</span>(<span style="color:#d14">&#34;devtools&#34;</span>)
+</span></span></code></pre></div><ol start="2">
+<li>Load {devtools}</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">library</span>(devtools)
+</span></span></code></pre></div><ol start="3">
+<li>Install {Rdune} from GitHub</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>devtools<span style="color:#000;font-weight:bold">::</span><span style="color:#900;font-weight:bold">install_github</span>(<span style="color:#d14">&#34;nvietto/Rdune&#34;</span>)
+</span></span></code></pre></div><ol start="4">
+<li>Load {Rdune}</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">library</span>(Rdune)
+</span></span></code></pre></div><p>Now that {Rdune} is installed, you can load it like any other R library in the future using <code>library(Rdune)</code>.</p>
+
+
+
+
+<h3 id="functions">Functions
+  <a href="#functions"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<p>Here are the key functions used in {Rdune}:</p>
+<ul>
+<li>
+<p><strong>names(dune_palettes)</strong></p>
+<ul>
+<li>Prints the names of all 18 palettes currently available.</li>
+</ul>
+</li>
+<li>
+<p><strong>print.palette()</strong></p>
+<ul>
+<li>Displays the colors of a palette.</li>
+<li>Note: The palette must be assigned to an object to print colors properly (I&rsquo;m working on improving this).</li>
+</ul>
+</li>
+<li>
+<p><strong>{ggplot2} functions</strong>:<br>
+(Note: be sure to add &quot; &quot; around the palette name)</p>
+<ul>
+<li><strong>scale_fill_dune_d()</strong>
+<ul>
+<li>Applies a discrete {Rdune} palette to the fill aesthetic in ggplot2.</li>
+</ul>
+</li>
+<li><strong>scale_fill_dune_c()</strong>
+<ul>
+<li>Applies a continuous {Rdune} palette to the fill aesthetic in ggplot2.</li>
+</ul>
+</li>
+<li><strong>scale_color_dune_d()</strong>
+<ul>
+<li>Applies a discrete {Rdune} palette to the color aesthetic in ggplot2.</li>
+</ul>
+</li>
+<li><strong>scale_color_dune_c()</strong>
+<ul>
+<li>Applies a continuous {Rdune} palette to the color aesthetic in ggplot2.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+
+
+
+<h3 id="examples">Examples
+  <a href="#examples"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">names</span>(dune_palettes)
+</span></span></code></pre></div><p><img src="names.jpg" alt=""></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>pal <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">dune_palette</span>(<span style="color:#d14">&#34;atreides_4&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">print.palette</span>(pal)
+</span></span></code></pre></div><p align="center">
+  <img src="palexample.jpg">
+</p>
+<p>You can view the inspiration for this palette below. (Note: You can find the inspiration for all the palettes at the 
+<a href="https://github.com/nvietto/Rdune" target="_blank" rel="noopener">GitHub repo</a>).</p>
+<p align="center">
+  <img src="Atreides4.jpg" width="75%">
+</p>
+<p>Now lets add this palette to a {ggplot2} plot using <strong>scale_color_dune_c()</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">library</span>(ggplot2)
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">ggplot</span>(<span style="color:#900;font-weight:bold">data.frame</span>(x <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">rnorm</span>(<span style="color:#099">10000</span>), y <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">rnorm</span>(<span style="color:#099">10000</span>)), 
+</span></span><span style="display:flex;"><span>       mapping <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">aes</span>(x <span style="color:#000;font-weight:bold">=</span> x, y <span style="color:#000;font-weight:bold">=</span> y)) <span style="color:#000;font-weight:bold">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">geom_hex</span>() <span style="color:#000;font-weight:bold">+</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">scale_fill_dune_c</span>(name <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;atreides_4&#34;</span>)
+</span></span></code></pre></div><p align="center">
+  <img src="plot.jpg"width="75%">
+</p>
+<p>Let&rsquo;s try a <strong>scale_fill_dune_d()</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">ggplot</span>(
+</span></span><span style="display:flex;"><span>  data <span style="color:#000;font-weight:bold">=</span> iris,
+</span></span><span style="display:flex;"><span>  mapping <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">aes</span>(x <span style="color:#000;font-weight:bold">=</span> Sepal.Length, fill <span style="color:#000;font-weight:bold">=</span> Species)) <span style="color:#000;font-weight:bold">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">geom_density</span>(alpha <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0.5</span>) <span style="color:#000;font-weight:bold">+</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">scale_fill_dune_d</span>(name <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;atreides_4&#34;</span>)
+</span></span></code></pre></div><p align="center">
+  <img src="plot2.jpg"width="75%">
+</p>
+
+
+
+
+<h3 id="final-remarks">Final Remarks
+  <a href="#final-remarks"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<p>I hope you enjoy {Rdune} as much as I do. If you would like more examples on how to use the package, feel free to download the 
+<a href="https://github.com/nvietto/Rdune/blob/main/vignettes/my-vignette.Rmd" target="_blank" rel="noopener">vignette</a>. I plan to submit it to CRAN in the upcoming weeks, so if you find any bugs or have any suggestions, please open an issue on the GitHub repo. Enjoy!</p>
+<br>
+<p align="center">
+    <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2o3NGNtdW5pMm5xcnA1YXQzNXlkcHRsczd1MGJmYnczOWd0eGpyZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WlsLAnYfrB30p9JK5Z/giphy.gif" width="50%"><br>
+    <small>Image: <a href="https://giphy.com">giphy.com</a></small>
+</p>
+
+        
+        <details closed class="f6 fw7 input-reset">
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Posted on:</dt>
+    <dd class="fw5 ml0">July 2, 2024</dd>
+  </dl>
+  <dl class="f6 lh-copy">
+    <dt class="fw7">Length:</dt>
+    <dd class="fw5 ml0">2 minute read, 350 words</dd>
+  </dl>
+  
+  
+  
+  <dl class="f6 lh-copy">
+    <dt class="fw7">See Also:</dt>
+    
+  </dl>
+</details>
+
+      </section>
+      <footer class="post-footer">
+        <div class="post-pagination dt w-100 mt4 mb2">
+  
+  
+  
+  
+    <a class="next dtc pl2 tr v-top fw6"
+    href="http://localhost:4321/blog/col2hcl/">Understanding hex codes and col2hcl &rarr;</a>
+  
+</div>
+
+      </footer>
+    </article>
+    
+      
+<div class="post-comments pa0 pa4-l mt4">
+  
+  <script src="https://utteranc.es/client.js"
+          repo="apreshill/apero"
+          issue-term="pathname"
+          theme="boxy-light"
+          label="comments :crystal_ball:"
+          crossorigin="anonymous"
+          async
+          type="text/javascript">
+  </script>
+  
+</div>
+
+    
+  </section>
+</main>
+<footer class="site-footer pv4 bt b--transparent ph5" role="contentinfo">
+  <nav class="db dt-l w-100">
+    <p class="site-copyright f7 db dtc-l v-mid w-100 w-33-l tc tl-l pv2 pv0-l mv0 lh-copy">
+      &copy; 2024 Nicholas Vietto
+      <span class="middot-divider"></span>
+      Made with <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/hugo-apero/" rel="dct:source">Hugo Apéro</a></span>.
+      <br />
+      
+Based on <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/formspree/blogophonic-hugo" rel="dct:source">Blogophonic</a></span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://formspree.io" property="cc:attributionName" rel="cc:attributionURL">Formspree</a>.
+    </p>
+    
+    <div class="site-social-links db dtc-l v-mid w-100 w-33-l tc pv2 pv0-l mv0">
+      <div class="social-icon-links" aria-hidden="true">
+  
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://github.com/nvietto" title="github" target="_blank" rel="me noopener">
+      <i class="fab fa-github fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://scholar.google.com/citations?user=mIhQO2wAAAAJ&amp;hl=en" title="google-scholar" target="_blank" rel="me noopener">
+      <i class="ai ai-google-scholar fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="http://www.linkedin.com/in/nicholas-vietto" title="linkedin" target="_blank" rel="me noopener">
+      <i class="fab fa-linkedin fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://fosstodon.org/@nvietto" title="mastodon" target="_blank" rel="me noopener">
+      <i class="fab fa-mastodon fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://twitter.com/ViettoNicholas" title="twitter" target="_blank" rel="me noopener">
+      <i class="fab fa-twitter fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="https://orcid.org/0000-0001-8835-2622" title="orcid" target="_blank" rel="me noopener">
+      <i class="ai ai-orcid fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="/img/cv.pdf" title="cv" >
+      <i class="ai ai-cv fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="/img/Resume.pdf" title="file" >
+      <i class="fas fa-file fa-lg fa-fw"></i>
+    </a>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <a class="link dib h1 w1 ml0 mr2 f6 o-90 glow" href="/blog/index.xml" title="rss" >
+      <i class="fas fa-rss fa-lg fa-fw"></i>
+    </a>
+  
+</div>
+
+    </div>
+    
+    <div class="site-links f6 db dtc-l v-mid w-100 w-67-l tc tr-l pv2 pv0-l mv0">
+      
+    </div>
+  </nav>
+  
+    <script>
+
+    var i, text, code, codes = document.getElementsByTagName('code');
+    for (let i = 0; i < codes.length;) {
+      code = codes[i];
+      if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+        text = code.textContent;
+        if (/^\$[^$]/.test(text) && /[^$]\$$/.test(text)) {
+          text = text.replace(/^\$/, '\\(').replace(/\$$/, '\\)');
+          code.textContent = text;
+        }
+        if (/^\\\((.|\s)+\\\)$/.test(text) ||
+            /^\\\[(.|\s)+\\\]$/.test(text) ||
+            /^\$(.|\s)+\$$/.test(text) ||
+            /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+          code.outerHTML = code.innerHTML;  
+          continue;
+        }
+      }
+      i++;
+    }
+</script>
+
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css" integrity="sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js" integrity="sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+
+
+    
+  
+  
+</footer>
+
+      </div>
+    </body>
+</html>

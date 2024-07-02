@@ -10,11 +10,14 @@
   </url><url>
     <loc>http://localhost:4321/project/packages/</loc>
   </url><url>
+    <loc>http://localhost:4321/blog/rdune/</loc>
+    <lastmod>2024-07-02T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:4321/</loc>
-    <lastmod>2024-04-06T00:00:00+00:00</lastmod>
+    <lastmod>2024-07-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:4321/blog/</loc>
-    <lastmod>2024-04-06T00:00:00+00:00</lastmod>
+    <lastmod>2024-07-02T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:4321/blog/col2hcl/</loc>
     <lastmod>2024-04-06T00:00:00+00:00</lastmod>
