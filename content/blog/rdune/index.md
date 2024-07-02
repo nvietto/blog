@@ -8,7 +8,7 @@ draft: false
 layout: single
 ---
 
-Want to add some "spice" to your {ggplot2} data visualizations? You're in the right place! I'm excited to introduce {Rdune}, a collection of 18 color palettes inspired by "Dune." 
+Want to add some "spice" to your {ggplot2} data visualizations? You're in the right place! I'm excited to introduce [{Rdune}](https://github.com/nvietto/Rdune), a collection of 18 color palettes inspired by "Dune." 
 
 <p align="center">
     <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXMwMXU1bzM1cTJmOGkyNXRrdjhqZ24zb3NqNG9ocHZzZnFwdDFvNSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/57Ioe1rrA1fpjLLMSK/giphy.gif" width="60%"><br>
