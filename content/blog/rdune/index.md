@@ -85,7 +85,7 @@ print.palette(pal)
 
 ```
 <p align="center">
-  <img src="palexample.jpg"width="50%">
+  <img src="palexample.jpg"width="65%">
 </p>
 
 You can view the inspiration for this palette below. (Note: You can find the inspiration for all the palettes at the [GitHub repo](https://github.com/nvietto/Rdune)). 
