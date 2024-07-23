@@ -52,7 +52,7 @@ Now that {Rdune} is installed, you can load it like any other R library in the f
 Here are the key functions used in {Rdune}: 
 
 * **names(dune_palettes)**
-  - Prints the names of all 18 palettes currently available. 
+  - Prints the names of all 15 palettes currently available. 
   
 * **print.palette()**
   - Displays the colors of a palette.
