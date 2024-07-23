@@ -21,6 +21,8 @@ These are some fun packages I've created for R users.
 
 The {Rdune} package offers a collection of color palettes inspired by 'Dune', designed for use in data visualizations and graphics with {ggplot2}. The structure of the code and creative inspiration were drawn from the[{PrettyCols}](https://github.com/nrennie/PrettyCols), [{wesanderson}](https://github.com/karthik/wesanderson), [{MetBrewer}](https://github.com/BlakeRMills/MetBrewer), [{PNWColors}](https://github.com/jakelawlor/PNWColors) packages.
 
+CRAN: https://cran.r-project.org/web/packages/Rdune/index.html
+
 GitHub: https://github.com/nvietto/Rdune
 
 
