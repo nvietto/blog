@@ -15,3 +15,17 @@ Below, you'll find a list of my publications. It's on my to do list to make thes
 ### Biopsychosocial Criminology 
 
 Armstrong, T. A., Boisvert, D. L., Wells, J., Lewis, R. H., Cooke, E. M., Woeckener, M., Kavish, N., **Vietto, N.**, & Harper, J. M. (2022). [**Testosterone, cortisol, and criminal behavior in men and women**](https://www.sciencedirect.com/science/article/abs/pii/S0018506X22001544). Hormones and behavior, 146, 105260.
+
+
+### R Packages 
+
+[**{Rdune}**](https://nvietto.rbind.io/project/packages/) is a package that provides color palettes inspired by the 'Dune' movies, designed for use with 'ggplot2'.
+
+* CRAN: https://cran.r-project.org/web/packages/Rdune/index.html
+
+* doi: [10.32614/CRAN.package.Rdune](https://cran.r-project.org/web/packages/Rdune/index.html)
+
+
+
+
+
