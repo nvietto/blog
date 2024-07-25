@@ -12,13 +12,13 @@ sidebar:
   description: This blog contains bite-sized R tutorials for beginners, as well as other R things. I've also added additional links for R resources below.
   
   
-    - [RBloggers](https://www.r-bloggers.com/) 
-    
     - [RWeekly](https://rweekly.org/)  
     
     - [The R Journal](https://journal.r-project.org/)  
     
     - [RLadies](https://rladies.org/)  
+    
+    - [RBloggers](https://www.r-bloggers.com/) 
     
     - [R for Data Science Online Learning Community](https://github.com/rfordatascience)  
     
