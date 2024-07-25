@@ -9,7 +9,7 @@ show_post_date: true
 layout: list-sidebar
 sidebar: 
   title: "**Thoughts on R Things**"
-  description: This blog contains bite-sized R tutorials for beginners. I've also added additional links for R resources below.
+  description: This blog contains bite-sized R tutorials for beginners, as well as other R things. I've also added additional links for R resources below.
   
   
     - [RBloggers](https://www.r-bloggers.com/) 
