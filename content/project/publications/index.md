@@ -19,7 +19,7 @@ Armstrong, T. A., Boisvert, D. L., Wells, J., Lewis, R. H., Cooke, E. M., Woecke
 
 ### R Packages 
 
-[**{Rdune}**](https://nvietto.github.io/Rdune/) is a package that provides color palettes inspired by the 'Dune' movies, designed for use with 'ggplot2'.
+Vietto N (2024). Rdune: 'Creates Color Palettes Inspired by Dune'. R package version 1.1.1.9000, https://nvietto.github.io/Rdune/, https://github.com/nvietto/Rdune. 
 
 * CRAN: https://cran.r-project.org/web/packages/Rdune/index.html
 
