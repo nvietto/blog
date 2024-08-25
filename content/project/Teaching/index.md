@@ -22,7 +22,7 @@ This page provides teaching materials for the courses I've developed and taught.
 </p>
 
 
-This is an undergraduate criminology and criminal justice research methods course. This course was adapted from the Justin Nix's [CRCJ 2510 Research Methods course](https://jnix.netlify.app/courses/crcj2510/). 
+This is an undergraduate criminology and criminal justice research methods course. The course material was adapted from [CRCJ 2510 Research Methods course](https://jnix.netlify.app/courses/crcj2510/). 
 
 GitHub: https://github.com/nvietto/Teaching/tree/main/CRCJ-2510
 
