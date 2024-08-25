@@ -12,7 +12,7 @@ layout: single
 
 ---
 
-This page contains the teaching material for courses I have taught and developed. At the links below, you'll find slides, assignments, and other resources. Feel free to use them. 
+This page provides teaching materials for the courses I've developed and taught. Below, you'll find links to slides, assignments, and additional resources. Feel free to use and share them.
 
 
 ### Research Methods 
