@@ -107,10 +107,6 @@ enableEmoji = true
   [[params.social]]
       icon      = "cv" 
       icon_pack = "ai"
-      url       = "/img/cv.pdf"
-  [[params.social]]
-      icon      = "file" 
-      icon_pack = "fas"
       url       = "/img/Resume.pdf"
   [[params.social]]
       icon      = "rss" 
