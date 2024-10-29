@@ -31,6 +31,9 @@
     <loc>http://localhost:4321/blog/webscraping/</loc>
     <lastmod>2024-03-12T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:4321/talk/asc24/</loc>
+    <lastmod>2024-02-26T10:00:00-06:00</lastmod>
+  </url><url>
     <loc>http://localhost:4321/talk/quarto/</loc>
     <lastmod>2024-02-26T10:00:00-06:00</lastmod>
   </url><url>
