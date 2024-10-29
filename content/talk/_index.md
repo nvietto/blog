@@ -12,7 +12,7 @@ cascade:
   author: 
   show_author_byline: true
   show_post_date: true
-  show_post_time: true
+  show_post_time: false
   show_comments: false 
 ---
 
