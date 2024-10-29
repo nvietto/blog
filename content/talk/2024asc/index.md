@@ -1,7 +1,7 @@
 ---
-title: "A Combined Theory Data-Driven Approach to Classifying Delinquency Risk in the Future of Families and Child Well-Being Study"
+title: "A Combined Theory Data-Driven Approach to Classifying Delinquency Risk"
 subtitle: ""
-excerpt: "Session: Advancing Methodological Approaches to Biopsychosocial Research."
+excerpt: "ASC Session: Advancing Methodological Approaches to Biopsychosocial Research."
 date: 2024-11-14T02:00:00-06:00
 date_end: "2024-11-14T03:20:00-06:00"
 featured: true
