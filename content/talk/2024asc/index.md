@@ -1,9 +1,9 @@
 ---
-title: "A Combined Theory Data-Driven Approach to Classifying Delinquency Risk"
+title: "Creating Reproducible R Workflows in Quarto"
 subtitle: ""
-excerpt: "ASC Session: Advancing Methodological Approaches to Biopsychosocial Research."
-date: 2024-11-14T02:00:00-06:00
-date_end: "2024-11-14T03:20:00-06:00"
+excerpt: "Here is a talk/workshop I gave on making reproducible workflows in Quarto."
+date: 2024-02-26T10:00:00-06:00
+date_end: "2024-02-26T10:30:00-06:00"
 featured: true
 show_post_time: false
 draft: false
@@ -12,9 +12,5 @@ links:
 - icon: github
   icon_pack: fab
   name: code
-  url: https://github.com/nvietto/talk-ASC24
+  url: https://github.com/nvietto/talk-quarto
 ---
-
-
-
-
