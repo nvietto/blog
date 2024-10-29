@@ -6,7 +6,7 @@
     <description>Recent content in Nicholas Vietto on Nicholas Vietto </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 14 Nov 2024 02:00:00 -0600</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jul 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:4321/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Teaching</title>
@@ -35,13 +35,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:4321/project/packages/</guid>
       <description>These are some fun packages I&amp;rsquo;ve created for R users.&#xA;Rdune The {Rdune} package offers a collection of color palettes inspired by &amp;lsquo;Dune&amp;rsquo;, designed for use in data visualizations and graphics with {ggplot2}. The structure of the code and creative inspiration were drawn from the {PrettyCols}, {wesanderson}, {MetBrewer}, {PNWColors} packages.&#xA;CRAN: https://cran.r-project.org/web/packages/Rdune/index.html&#xA;GitHub: https://github.com/nvietto/Rdune&#xA;nopunintended {nopunintended} is a package designed to take your mind off coding with puns from &amp;lsquo;No Pun Intended: Volume Too&amp;rsquo; in the show/video game &amp;lsquo;The Last of Us&amp;rsquo;.</description>
-    </item>
-    <item>
-      <title>A Combined Theory Data-Driven Approach to Classifying Delinquency Risk in the Future of Families and Child Well-Being Study</title>
-      <link>http://localhost:4321/talk/asc/</link>
-      <pubDate>Thu, 14 Nov 2024 02:00:00 -0600</pubDate>
-      <guid>http://localhost:4321/talk/asc/</guid>
-      <description></description>
     </item>
     <item>
       <title>{Rdune} is now on CRAN</title>
@@ -77,13 +70,6 @@
       <pubDate>Tue, 12 Mar 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:4321/blog/webscraping/</guid>
       <description>If you share my passion for the NFL, you may have considered finding some NFL data to analyze. Instead of manually inputting data into Excel, you can use a more efficient method: web scraping with the {rvest} package in R.&#xA;Let&amp;rsquo;s scrape the career stats of Jared Goff from my favorite team - the Detroit Lions 🦁&#xA;Set up &amp;amp; Scrape Lets install and load our packages.&#xA;We will need the tidyverse, rvest, and janitor packages.</description>
-    </item>
-    <item>
-      <title>Creating Reproducible R Workflows in Quarto</title>
-      <link>http://localhost:4321/talk/quarto/</link>
-      <pubDate>Mon, 26 Feb 2024 10:00:00 -0600</pubDate>
-      <guid>http://localhost:4321/talk/quarto/</guid>
-      <description></description>
     </item>
   </channel>
 </rss>
