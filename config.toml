@@ -97,10 +97,6 @@ enableEmoji = true
       icon_pack = "fab"
       url       = "https://fosstodon.org/@nvietto"
   [[params.social]]
-      icon      = "twitter" 
-      icon_pack = "fab"
-      url       = "https://twitter.com/ViettoNicholas"
-  [[params.social]]
       icon      = "orcid" 
       icon_pack = "ai"
       url       = "https://orcid.org/0000-0001-8835-2622"
