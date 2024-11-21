@@ -127,7 +127,7 @@ ggplot(
 
 ### Final Remarks 
 
-I hope you enjoy {Rdune} as much as I do. If you would like more examples on how to use the package, feel free to download the [vignette](https://github.com/nvietto/Rdune/blob/main/vignettes/my-vignette.Rmd). I plan to submit it to CRAN in the upcoming weeks, so if you find any bugs or have any suggestions, please open an issue on the GitHub repo. Enjoy!
+I hope you enjoy {Rdune} as much as I do. If you would like more examples on how to use the package, feel free to checkout the [vignette](https://nvietto.github.io/Rdune/articles/my-vignette.html). I plan to submit it to CRAN in the upcoming weeks, so if you find any bugs or have any suggestions, please open an issue on the GitHub repo. Enjoy!
 
 <br>
 
