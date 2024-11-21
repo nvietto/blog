@@ -13,8 +13,4 @@ links:
   icon_pack: fab
   name: code
   url: https://github.com/nvietto/talk-ASC24
-- icon: download
-  icon_pack: fas
-  name: Slides
-  url: /talk/2024asc/slides.html
 ---
