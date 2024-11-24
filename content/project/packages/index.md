@@ -9,7 +9,6 @@ draft: false
 layout: single
 ---
 
-These are some fun packages I've created for R users.
 
 
 ### [Rdune](https://github.com/nvietto/Rdune)
@@ -45,7 +44,7 @@ GitHub: https://github.com/nvietto/nopunintended
   <img src="movie.jpg" alt="Centered Image"style="width: 200px;">
 </p>
 
-{movienight} is a package that recommends a film within RStudio.
+{movienight} is a package that recommends a film.
 
 GitHub: https://github.com/nvietto/movienight
 

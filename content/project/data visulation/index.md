@@ -14,7 +14,7 @@ links:
   url:  https://github.com/nvietto/TidyTuesday/tree/main
 ---
 
-Tidy Tuesday is a weekly social data challenge in R, where participants use a new data set each week to create a data visualization and share their work on social media with #TidyTuesday. For more information on how to participate head [here](https://github.com/rfordatascience/tidytuesday).
+TidyTuesday is a weekly social data challenge in R, where participants use a new data set each week to create a data visualization and share their work on social media with #TidyTuesday. For more information on how to participate head [here](https://github.com/rfordatascience/tidytuesday).
 
 
 <br>
@@ -23,7 +23,6 @@ Tidy Tuesday is a weekly social data challenge in R, where participants use a ne
   <img src="cheese.jpg" alt="Centered Image">
 </p>
 
-<br>
 
 <p style="text-align: center;">
   <img src="Vege.jpg" alt="Centered Image">
