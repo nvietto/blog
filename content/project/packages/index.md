@@ -9,9 +9,17 @@ draft: false
 layout: single
 ---
 
+### [samplezoo](https://nvietto.github.io/samplezoo/)
 
+<p style="text-align: center;">
+  <img src="samplezoo.jpg" alt="Centered Image" style="width: 200px;">
+</p>
 
-### [Rdune](https://github.com/nvietto/Rdune)
+The {samplezoo} package simplifies generating samples with various probability distributions, enabling users to quickly create data frames for demonstrations, troubleshooting, or teaching. By prioritizing simplicity and speed over customization of sample parameters, {samplezoo} reduces the need for repetitive code, making it particularly useful for beginners or anyone seeking to save time while working with statistical and probabilistic data.
+
+GitHub: https://nvietto.github.io/samplezoo/
+
+### [Rdune](https://nvietto.github.io/Rdune/)
 
 <p style="text-align: center;">
   <img src="Rdune.jpg" alt="Centered Image" style="width: 200px;">
@@ -22,7 +30,7 @@ The {Rdune} package offers a collection of color palettes inspired by 'Dune', de
 
 CRAN: https://cran.r-project.org/web/packages/Rdune/index.html
 
-GitHub: https://github.com/nvietto/Rdune
+GitHub: https://nvietto.github.io/Rdune/
 
 
 ### [nopunintended](https://github.com/nvietto/nopunintended)
