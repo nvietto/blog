@@ -23,9 +23,14 @@ Armstrong, T. A., Boisvert, D. L., Wells, J., Lewis, R. H., Cooke, E. M., Woecke
 
 ### R Packages 
 
-Vietto N (2024). Rdune: 'Creates Color Palettes Inspired by Dune'. R package version 1.1.1.9000, https://nvietto.github.io/Rdune/, https://github.com/nvietto/Rdune. 
+Vietto N (2024). samplezoo: Generate Samples with a Variety of Probability Distributions. R package version 1.1.1, https://nvietto.github.io/samplezoo/, https://github.com/nvietto/samplezoo. 
 
-* CRAN: https://cran.r-project.org/web/packages/Rdune/index.html
+* CRAN: https://CRAN.R-project.org/package=samplezoo  
+
+
+Vietto N (2024). Rdune: Creates Color Palettes Inspired by Dune. R package version 1.1.1.9000, https://nvietto.github.io/Rdune/, https://github.com/nvietto/Rdune. 
+
+* CRAN: https://CRAN.R-project.org/package=Rdune 
 
 * doi: [10.32614/CRAN.package.Rdune](https://cran.r-project.org/web/packages/Rdune/index.html)
 

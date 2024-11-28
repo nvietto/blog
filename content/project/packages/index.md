@@ -17,6 +17,8 @@ layout: single
 
 The {samplezoo} package simplifies generating samples with various probability distributions, enabling users to quickly create data frames for demonstrations, troubleshooting, or teaching. By prioritizing simplicity and speed over customization of sample parameters, {samplezoo} reduces the need for repetitive code, making it particularly useful for beginners or anyone seeking to save time while working with statistical and probabilistic data.
 
+CRAN: https://CRAN.R-project.org/package=samplezoo
+
 GitHub: https://nvietto.github.io/samplezoo/
 
 ### [Rdune](https://nvietto.github.io/Rdune/)
@@ -28,7 +30,7 @@ GitHub: https://nvietto.github.io/samplezoo/
 
 The {Rdune} package offers a collection of color palettes inspired by 'Dune', designed for use in data visualizations and graphics with {ggplot2}. The structure of the code and creative inspiration were drawn from the[{PrettyCols}](https://github.com/nrennie/PrettyCols), [{wesanderson}](https://github.com/karthik/wesanderson), [{MetBrewer}](https://github.com/BlakeRMills/MetBrewer), [{PNWColors}](https://github.com/jakelawlor/PNWColors) packages.
 
-CRAN: https://cran.r-project.org/web/packages/Rdune/index.html
+CRAN:  https://CRAN.R-project.org/package=Rdune 
 
 GitHub: https://nvietto.github.io/Rdune/
 
