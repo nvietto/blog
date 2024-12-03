@@ -35,5 +35,12 @@
       <guid>http://localhost:4321/project/packages/</guid>
       <description>samplezoo The {samplezoo} package simplifies the generation of samples from various probability distributions, enabling users to quickly create datasets for demonstrations, troubleshooting, or teaching. By prioritizing simplicity and speed over the customization of sample parameters, {samplezoo} is ideal for beginners or anyone looking to save time when working with data.&#xA;CRAN: https://CRAN.R-project.org/package=samplezoo&#xA;GitHub: https://nvietto.github.io/samplezoo/&#xA;Rdune The {Rdune} package offers a collection of color palettes inspired by &amp;lsquo;Dune&amp;rsquo;, designed for use in data visualizations and graphics with {ggplot2}.</description>
     </item>
+    <item>
+      <title>Talks</title>
+      <link>http://localhost:4321/project/talks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/project/talks/</guid>
+      <description>Some talks I&amp;rsquo;ve given. You can find slides, references, and supplemental materials—including practice exercises and workshop content—at the corresponding GitHub repositories. Feel free to reach out with any questions.&#xA;A Combined Theory Data-Driven Approach to Classifying Delinquency Risk in the Future of Families and Child Well-Being Study ASC 2024 Meeting in San Francisco: Session: Advancing Methodological Approaches to Biopsychosocial Research GitHub: https://github.com/nvietto/talk-ASC24&#xA;Creating Reproducible R Workflows in Quarto Guest Lecture in Advanced Statistics UNO Talk/workshop on making reproducible workflows in Quarto GitHub: https://github.</description>
+    </item>
   </channel>
 </rss>

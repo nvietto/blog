@@ -16,13 +16,6 @@
       <description>I&amp;rsquo;m very happy to announce that {Rdune} has been published on CRAN🎉. What does that mean exactly? And what&amp;rsquo;s next for {Rdune}? Let&amp;rsquo;s dive into it.&#xA;What is CRAN? CRAN (Comprehensive R Archive Network), maintained by the R Foundation for Statistical Computing, is the primary repository for R packages. It provides storage, distribution, and documentation for R software and its extensions, ensuring consistency and availability of packages across various systems and platforms, including Windows, macOS, and Linux.</description>
     </item>
     <item>
-      <title>Introducing {samplezoo}</title>
-      <link>http://localhost:4321/blog/samplezoo/</link>
-      <pubDate>Tue, 23 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/blog/samplezoo/</guid>
-      <description>How to install and load install.packages(&amp;#34;samplezoo&amp;#34;) Functions small_data &amp;lt;- samplezoo(&amp;#34;small&amp;#34;) medium_data &amp;lt;- samplezoo(&amp;#34;medium&amp;#34;) large_data &amp;lt;- samplezoo(&amp;#34;large&amp;#34;) Examples Just do a simple load and exploratory analysis here. One visual. mean etc. set seed&#xA;Final Remarks incorporate cavet with missing data, use {Messy}</description>
-    </item>
-    <item>
       <title>Introducing {Rdune}</title>
       <link>http://localhost:4321/blog/rdune/</link>
       <pubDate>Tue, 02 Jul 2024 00:00:00 +0000</pubDate>
