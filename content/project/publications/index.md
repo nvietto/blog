@@ -21,19 +21,6 @@ Armstrong, T. A., Boisvert, D. L., Wells, J., Lewis, R. H., Cooke, E. M., Woecke
 Armstrong, T. A., Boisvert, D. L., Wells, J., Lewis, R. H., Cooke, E. M., Woeckener, M., Kavish, N., **Vietto, N.**, & Harper, J. M. (2022). [**Testosterone, cortisol, and criminal behavior in men and women**](https://www.sciencedirect.com/science/article/abs/pii/S0018506X22001544). *Hormones and Behavior*, 146, 105260.
 
 
-### R Packages 
-
-**Vietto N** (2024). samplezoo: Generate Samples with a Variety of Probability Distributions. R package version 1.1.1, https://nvietto.github.io/samplezoo/, https://github.com/nvietto/samplezoo. 
-
-* CRAN: https://CRAN.R-project.org/package=samplezoo  
-
-
-**Vietto N** (2024). Rdune: Creates Color Palettes Inspired by Dune. R package version 1.1.1.9000, https://nvietto.github.io/Rdune/, https://github.com/nvietto/Rdune. 
-
-* CRAN: https://CRAN.R-project.org/package=Rdune 
-
-
-
 
 
 

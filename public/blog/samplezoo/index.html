@@ -24,12 +24,12 @@
   
     
   
-<meta name="description" content="Introducing the {samplezoo} package which simplifies generating samples with various probability distribution.">
+<meta name="description" content="A quick way to generate samples that contain a variety of probability distributions ">
 
 
 <meta property="og:site_name" content="Nicholas Vietto ">
 <meta property="og:title" content="Introducing {samplezoo} | Nicholas Vietto ">
-<meta property="og:description" content="Introducing the {samplezoo} package which simplifies generating samples with various probability distribution." />
+<meta property="og:description" content="A quick way to generate samples that contain a variety of probability distributions " />
 <meta property="og:type" content="page" />
 <meta property="og:url" content="http://localhost:4321/blog/samplezoo/" />
 <meta property="og:locale" content="en">
@@ -43,9 +43,10 @@
         <meta name="twitter:image" content="http://localhost:4321/img/sharingimg.png" >
     
   <meta itemprop="name" content="Introducing {samplezoo}">
-<meta itemprop="description" content="">
-
-<meta itemprop="wordCount" content="0">
+<meta itemprop="description" content="How to install and load install.packages(&#34;samplezoo&#34;) Functions small_data &lt;- samplezoo(&#34;small&#34;) medium_data &lt;- samplezoo(&#34;medium&#34;) large_data &lt;- samplezoo(&#34;large&#34;) Examples Just do a simple load and exploratory analysis here. One visual. mean etc. set seed
+Final Remarks incorporate cavet with missing data, use {Messy}"><meta itemprop="datePublished" content="2024-07-23T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2024-07-23T00:00:00+00:00" />
+<meta itemprop="wordCount" content="41">
 <meta itemprop="keywords" content="" />
   
   <!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -102,22 +103,71 @@
         <h1 class="f1 lh-solid measure-narrow mb3 fw4">Introducing {samplezoo}</h1>
         
         <p class="f6 measure lh-copy mv1">By Nicholas Vietto</p>
-        <p class="f7 db mv0 ttu">January 1, 0001</p>
+        <p class="f7 db mv0 ttu">July 23, 2024</p>
 
       
 
       </header>
       <section class="post-body pt5 pb4">
         
+
+
+
+<h3 id="how-to-install-and-load">How to install and load
+  <a href="#how-to-install-and-load"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">install.packages</span>(<span style="color:#d14">&#34;samplezoo&#34;</span>)
+</span></span></code></pre></div>
+
+
+
+<h3 id="functions">Functions
+  <a href="#functions"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<pre tabindex="0"><code>small_data &lt;- samplezoo(&#34;small&#34;)
+
+medium_data &lt;- samplezoo(&#34;medium&#34;)
+
+large_data &lt;- samplezoo(&#34;large&#34;)
+</code></pre>
+
+
+
+<h3 id="examples">Examples
+  <a href="#examples"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<p>Just do a simple load and exploratory analysis here. One visual. mean etc. set seed</p>
+
+
+
+
+<h3 id="final-remarks">Final Remarks
+  <a href="#final-remarks"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<p>incorporate cavet with missing data, use {Messy}</p>
+
         
         <details closed class="f6 fw7 input-reset">
   <dl class="f6 lh-copy">
     <dt class="fw7">Posted on:</dt>
-    <dd class="fw5 ml0">January 1, 0001</dd>
+    <dd class="fw5 ml0">July 23, 2024</dd>
   </dl>
   <dl class="f6 lh-copy">
     <dt class="fw7">Length:</dt>
-    <dd class="fw5 ml0">0 minute read, 0 words</dd>
+    <dd class="fw5 ml0">1 minute read, 41 words</dd>
   </dl>
   
   
@@ -134,9 +184,12 @@
   
   
     <a class="prev dtc pr2 tl v-top fw6"
-    href="http://localhost:4321/blog/webscraping/">&larr; Web Scraping HTML Tables</a>
+    href="http://localhost:4321/blog/rdune2/">&larr; {Rdune} is now on CRAN</a>
   
   
+  
+    <a class="next dtc pl2 tr v-top fw6"
+    href="http://localhost:4321/blog/rdune/">Introducing {Rdune} &rarr;</a>
   
 </div>
 
