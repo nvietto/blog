@@ -6,7 +6,7 @@
     <description>Recent content in Nicholas Vietto on Nicholas Vietto </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 23 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:4321/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Teaching</title>
@@ -42,6 +42,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:4321/project/talks/</guid>
       <description>Some talks I&amp;rsquo;ve given. You can find slides, references, and supplemental materials—including practice exercises and workshop content—at the corresponding GitHub repositories. Feel free to reach out with any questions.&#xA;A Combined Theory Data-Driven Approach to Classifying Delinquency Risk in the Future of Families and Child Well-Being Study ASC 2024 Meeting in San Francisco: Session: Advancing Methodological Approaches to Biopsychosocial Research GitHub: https://github.com/nvietto/talk-ASC24&#xA;Creating Reproducible R Workflows in Quarto Guest Lecture in Advanced Statistics UNO Talk/workshop on making reproducible workflows in Quarto GitHub: https://github.</description>
+    </item>
+    <item>
+      <title>Introducing {samplezoo}</title>
+      <link>http://localhost:4321/blog/samplezoo/</link>
+      <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:4321/blog/samplezoo/</guid>
+      <description>While preparing lecture materials for undergraduate statistics, I often found myself repeatedly looking up code documentation on how to generate distributions. This might just be a &amp;lsquo;me problem&amp;rsquo; — having the memory of a goldfish (no offense to any goldfish reading this 😅) — but I figured, &amp;ldquo;Hey, maybe someone else has this issue too.&amp;rdquo;&#xA;So, I developed {samplezoo} to save time and help educators focus more on creatively teaching statistical concepts rather than spending that time on setup.</description>
     </item>
     <item>
       <title>{Rdune} is now on CRAN</title>

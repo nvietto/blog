@@ -38,15 +38,16 @@
 
 
     
-        <meta property="og:image" content="http://localhost:4321/img/sharingimg.png" >
+        <meta property="og:image" content="http://localhost:4321/blog/samplezoo/featured.png" >
         <meta property="twitter:card" content="summary_large_image">
-        <meta name="twitter:image" content="http://localhost:4321/img/sharingimg.png" >
+        <meta name="twitter:image" content="http://localhost:4321/blog/samplezoo/featured.png" >
+    
     
   <meta itemprop="name" content="Introducing {samplezoo}">
-<meta itemprop="description" content="How to install and load install.packages(&#34;samplezoo&#34;) Functions small_data &lt;- samplezoo(&#34;small&#34;) medium_data &lt;- samplezoo(&#34;medium&#34;) large_data &lt;- samplezoo(&#34;large&#34;) Examples Just do a simple load and exploratory analysis here. One visual. mean etc. set seed
-Final Remarks incorporate cavet with missing data, use {Messy}"><meta itemprop="datePublished" content="2024-07-23T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2024-07-23T00:00:00+00:00" />
-<meta itemprop="wordCount" content="41">
+<meta itemprop="description" content="While preparing lecture materials for undergraduate statistics, I often found myself repeatedly looking up code documentation on how to generate distributions. This might just be a &lsquo;me problem&rsquo; — having the memory of a goldfish (no offense to any goldfish reading this 😅) — but I figured, &ldquo;Hey, maybe someone else has this issue too.&rdquo;
+So, I developed {samplezoo} to save time and help educators focus more on creatively teaching statistical concepts rather than spending that time on setup."><meta itemprop="datePublished" content="2024-12-04T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2024-12-04T00:00:00+00:00" />
+<meta itemprop="wordCount" content="330"><meta itemprop="image" content="http://localhost:4321/blog/samplezoo/featured.png" />
 <meta itemprop="keywords" content="" />
   
   <!--[if IE]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -84,11 +85,6 @@ Final Remarks incorporate cavet with missing data, use {Messy}"><meta itemprop="
         
         
         
-      <a class="link f6 f5-l dib pv1 ph2 " href="/talk/" title="Talks">Talks</a>
-      
-        
-        
-        
       <a class="link f6 f5-l dib pv1 ph2 " href="/project/" title="Project Portfolio">Projects</a>
       
       
@@ -103,50 +99,98 @@ Final Remarks incorporate cavet with missing data, use {Messy}"><meta itemprop="
         <h1 class="f1 lh-solid measure-narrow mb3 fw4">Introducing {samplezoo}</h1>
         
         <p class="f6 measure lh-copy mv1">By Nicholas Vietto</p>
-        <p class="f7 db mv0 ttu">July 23, 2024</p>
+        <p class="f7 db mv0 ttu">December 4, 2024</p>
 
       
 
       </header>
       <section class="post-body pt5 pb4">
-        
+        <p>While preparing lecture materials for undergraduate statistics, I often found myself repeatedly looking up code documentation on how to generate distributions. This might just be a &lsquo;me problem&rsquo; — having the memory of a goldfish (no offense to any goldfish reading this 😅) — but I figured, &ldquo;Hey, maybe someone else has this issue too.&rdquo;</p>
+<p>So, I developed {samplezoo} to save time and help educators focus more on creatively teaching statistical concepts rather than spending that time on setup.</p>
 
 
 
-<h3 id="how-to-install-and-load">How to install and load
-  <a href="#how-to-install-and-load"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+
+<h3 id="install">Install
+  <a href="#install"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="currentColor"></path>
       <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
     </svg></a>
 </h3>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">install.packages</span>(<span style="color:#d14">&#34;samplezoo&#34;</span>)
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">install.packages</span>(<span style="color:#d14">&#34;samplezoo&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">library</span>(samplezoo)
 </span></span></code></pre></div>
 
 
 
-<h3 id="functions">Functions
-  <a href="#functions"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<h3 id="how-to-use">How to use
+  <a href="#how-to-use"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="currentColor"></path>
       <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
     </svg></a>
 </h3>
-<pre tabindex="0"><code>small_data &lt;- samplezoo(&#34;small&#34;)
+<p>The three dataset sizes are:</p>
+<ul>
+<li><strong>small</strong>: Generates a data frame with 100 samples per distribution.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>data <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">samplezoo</span>(<span style="color:#d14">&#34;small&#34;</span>)
+</span></span></code></pre></div><ul>
+<li><strong>medium</strong>: Generates a data frame with 1,000 samples per distribution.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>data <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">samplezoo</span>(<span style="color:#d14">&#34;medium&#34;</span>)
+</span></span></code></pre></div><ul>
+<li><strong>large</strong>: Generates a data frame with 10,000 samples per distribution.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>data <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">samplezoo</span>(<span style="color:#d14">&#34;large&#34;</span>)
+</span></span></code></pre></div>
 
-medium_data &lt;- samplezoo(&#34;medium&#34;)
-
-large_data &lt;- samplezoo(&#34;large&#34;)
-</code></pre>
 
 
-
-<h3 id="examples">Examples
-  <a href="#examples"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+<h3 id="whats-in-each-column">What&rsquo;s in each column
+  <a href="#whats-in-each-column"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="currentColor"></path>
       <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
     </svg></a>
 </h3>
-<p>Just do a simple load and exploratory analysis here. One visual. mean etc. set seed</p>
+<p>The output will be a data frame with the following columns:</p>
+<p><strong>norm</strong>: Normal distribution with mean and standard deviation parameters</p>
+<p><strong>norm2</strong>: Slight variation of the normal distribution</p>
+<p><strong>norm3</strong>: Another slight variation of the normal distribution</p>
+<p><strong>binom</strong>: Binomial (Bernoulli) distribution</p>
+<p><strong>neg</strong>: Negative binomial distribution</p>
+<p><strong>pois</strong>: Poisson distribution</p>
+<p><strong>exp</strong>: Exponential distribution</p>
+<p><strong>unif</strong>: Uniform distribution</p>
+<p><strong>beta</strong>: Beta distribution</p>
+<p><strong>gamma</strong>: Gamma distribution</p>
+<p><strong>chisq</strong>: Chi-squared distribution</p>
+<p><strong>t_dist</strong>: Student&rsquo;s t-distribution</p>
+
+
+
+
+<h3 id="example---negative-binomial-distribution">Example - Negative Binomial Distribution
+  <a href="#example---negative-binomial-distribution"><svg class="anchor-symbol" aria-hidden="true" height="26" width="26" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="currentColor"></path>
+      <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
+    </svg></a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">library</span>(tidyverse)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">set.seed</span>(<span style="color:#099">123</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>data <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">samplezoo</span>(<span style="color:#d14">&#34;medium&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>data <span style="color:#000;font-weight:bold">|&gt;</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">ggplot</span>(<span style="color:#900;font-weight:bold">aes</span>(neg)) <span style="color:#000;font-weight:bold">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">geom_histogram</span>(binwidth <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>, fill <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;orange&#34;</span>, alpha <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0.7</span>, color <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;black&#34;</span>) <span style="color:#000;font-weight:bold">+</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">theme_minimal</span>() <span style="color:#000;font-weight:bold">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">labs</span>(y <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;Frequency&#34;</span>) <span style="color:#000;font-weight:bold">+</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#900;font-weight:bold">theme</span>(axis.title.x <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">element_blank</span>())
+</span></span></code></pre></div><p align="center">
+  <img src="histo.jpg" width="75%">
+</p>
 
 
 
@@ -157,17 +201,20 @@ large_data &lt;- samplezoo(&#34;large&#34;)
       <path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76.0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71.0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71.0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76.0 5-2.24 5-5s-2.24-5-5-5z"></path>
     </svg></a>
 </h3>
-<p>incorporate cavet with missing data, use {Messy}</p>
+<p>I initially considered adding a parameter to introduce missing data into the data frames, but I decided against it to keep the package simple. For those interested in adding features like missing values, I recommend checking out the 
+<a href="https://nrennie.rbind.io/messy/" target="_blank" rel="noopener">{messy}</a> package.</p>
+<p>Finally, there&rsquo;s a lot that could be added to {samplezoo} (e.g., more columns to the &rsquo;large&rsquo; dataset to better utilize its size or the spacing I forgot to add in the norm_2 and norm_3 columns 🙄), but I&rsquo;m going to hold off for a bit and see if people find it valuable.</p>
+<p>Thanks for reading!</p>
 
         
         <details closed class="f6 fw7 input-reset">
   <dl class="f6 lh-copy">
     <dt class="fw7">Posted on:</dt>
-    <dd class="fw5 ml0">July 23, 2024</dd>
+    <dd class="fw5 ml0">December 4, 2024</dd>
   </dl>
   <dl class="f6 lh-copy">
     <dt class="fw7">Length:</dt>
-    <dd class="fw5 ml0">1 minute read, 41 words</dd>
+    <dd class="fw5 ml0">2 minute read, 330 words</dd>
   </dl>
   
   
@@ -183,13 +230,10 @@ large_data &lt;- samplezoo(&#34;large&#34;)
         <div class="post-pagination dt w-100 mt4 mb2">
   
   
-    <a class="prev dtc pr2 tl v-top fw6"
-    href="http://localhost:4321/blog/rdune2/">&larr; {Rdune} is now on CRAN</a>
-  
   
   
     <a class="next dtc pl2 tr v-top fw6"
-    href="http://localhost:4321/blog/rdune/">Introducing {Rdune} &rarr;</a>
+    href="http://localhost:4321/blog/rdune2/">{Rdune} is now on CRAN &rarr;</a>
   
 </div>
 
