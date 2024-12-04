@@ -17,7 +17,8 @@ Some talks I've given. You can find slides, references, and supplemental materia
 </p>
 
 #### ASC 2024 Meeting in San Francisco:
-##### Session: Advancing Methodological Approaches to Biopsychosocial Research
+
+Session: Advancing Methodological Approaches to Biopsychosocial Research
 
 
 GitHub: https://github.com/nvietto/talk-ASC24
@@ -30,7 +31,8 @@ GitHub: https://github.com/nvietto/talk-ASC24
 </p>
 
 #### Guest Lecture in Advanced Statistics UNO 
-##### Talk/workshop on making reproducible workflows in Quarto
+
+Talk/workshop on making reproducible workflows in Quarto
 
 GitHub: https://github.com/nvietto/talk-quarto
 
