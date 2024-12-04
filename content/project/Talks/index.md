@@ -16,7 +16,7 @@ Some talks I've given. You can find slides, references, and supplemental materia
   <img src="asc24.jpg" alt="Centered Image">
 </p>
 
-#### ASC 2024 Meeting in San Francisco:
+#### ASC 2024 Meeting in San Francisco
 
 Session: Advancing Methodological Approaches to Biopsychosocial Research
 
