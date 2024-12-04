@@ -10,7 +10,7 @@ layout: single
 
 While preparing lecture materials for undergraduate statistics, I often found myself repeatedly looking up code documentation on how to generate distributions. This might just be a 'me problem' — having the memory of a goldfish (no offense to any goldfish reading this 😅) — but I figured, "Hey, maybe someone else has this issue too." 
 
-So, I developed {samplezoo} to save time and help educators focus more on creatively teaching statistical concepts rather than spending that time on setup.
+So, I developed [{samplezoo}](https://nvietto.github.io/samplezoo/) to save time and help educators focus more on creatively teaching statistical concepts rather than spending that time on setup.
 
 
 ### Install
