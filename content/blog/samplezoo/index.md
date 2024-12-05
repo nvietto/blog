@@ -8,9 +8,7 @@ draft: false
 layout: single
 ---
 
-While preparing lecture materials for undergraduate statistics, I often found myself repeatedly looking up code documentation on how to generate distributions. This might just be a 'me problem' — having the memory of a goldfish 😅 — but I figured, "Hey, maybe someone else has this issue too." 
-
-So, I developed [{samplezoo}](https://nvietto.github.io/samplezoo/) to save time and help educators focus more on creatively teaching statistical concepts rather than spending that time on setup.
+While preparing lecture materials for undergraduate statistics, I often found myself repeatedly looking up code documentation on how to generate distributions. This might just be a 'me problem' — having the memory of a goldfish 😅 — but I figured, "Hey, maybe someone else has this issue too." So, I developed [{samplezoo}](https://nvietto.github.io/samplezoo/) to save time and help educators focus more on creatively teaching statistical concepts rather than spending that time on setup.
 
 
 ### Install
@@ -27,26 +25,29 @@ library(samplezoo)
 
 The three dataset sizes are:
 
-* **small**: Generates a data frame with 100 samples per distribution.
 
 ```r
 data <- samplezoo("small")
 
 ```
 
-* **medium**: Generates a data frame with 1,000 samples per distribution.
+* **small**: Generates a data frame with 100 samples.
 
 ```r
 data <- samplezoo("medium")
 
 ```
 
-* **large**: Generates a data frame with 10,000 samples per distribution.
+* **medium**: Generates a data frame with 1,000 samples.
 
 ```r
 data <- samplezoo("large")
 
 ```
+
+* **large**: Generates a data frame with 10,000 samples.
+
+
 
 ### What's in each column 
 
