@@ -1,7 +1,7 @@
 ---
 title: "R Packages"
 subtitle: ""
-excerpt: "Packages I've developed"
+excerpt: "Software"
 weight: 7
 author: "Nicholas Vietto"
 draft: false

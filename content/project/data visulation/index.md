@@ -1,7 +1,7 @@
 ---
 title: "Data Visualizations"
 subtitle: "Selected contributions to the #TidyTuesday data challenge"
-excerpt: "Some of my contributions to the #TidyTuesday data challenge"
+excerpt: "Contributions to the #TidyTuesday data challenge"
 weight: 7
 author: "Nicholas Vietto"
 draft: false

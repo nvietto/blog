@@ -1,7 +1,7 @@
 ---
 title: "Teaching"
 subtitle: ""
-excerpt: "My course materials"
+excerpt: "Course materials"
 weight: 1
 author: "Nicholas Vietto"
 draft: false

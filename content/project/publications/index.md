@@ -1,7 +1,7 @@
 ---
 title: "Publications"
 subtitle: ""
-excerpt: "My published research"
+excerpt: "Published research"
 weight: 2
 author: "Nicholas Vietto"
 draft: false
