@@ -33,7 +33,7 @@ enableEmoji = true
   description = "A personal website."
   favicon = "/img/sharingimg.ico"
   logo = ""
-  mainSections = ["blog", "project", "talk"]
+  mainSections = ["blog", "project"]
   navallcaps = true
   socialInHeader = false
   socialInFooter = true
@@ -96,6 +96,10 @@ enableEmoji = true
       icon      = "mastodon"
       icon_pack = "fab"
       url       = "https://fosstodon.org/@nvietto"
+   [[params.social]]
+      icon      = "cloud"
+      icon_pack = "fas"
+      url       = "https://bsky.app/profile/nvietto.bsky.social"
   [[params.social]]
       icon      = "orcid" 
       icon_pack = "ai"
