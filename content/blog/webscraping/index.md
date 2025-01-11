@@ -50,7 +50,7 @@ goffstats <- read_html(goffstats_url) |>
 One effective method for finding the right HTML table involves pulling up the object (i.e., goffstats) from the environment and then examining the value column to find the correct dimensions of the table you want from the website you scraped (i.e., the wiki page). For example, head [here](https://en.wikipedia.org/wiki/Jared_Goff) and scroll down to NFL career statistics then regular season and count the rows and columns. After you have a decent idea of the dimensions, head to your object (i.e., goff_stats) and try to match the dimensions. Object **[[6]]** with the **value 10 x 23** is the one we want so we create a new object with that information. 
 
 ```r
-career_stats <- goffstats[[6]]
+career_stats <- goffstats[[7]]
 
 ```
 
