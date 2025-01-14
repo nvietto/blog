@@ -137,7 +137,7 @@ We will need the tidyverse, rvest, and janitor packages."><meta itemprop="datePu
 </span></span></code></pre></div><p><strong>Note:</strong> If you’re curious what html_table() does, copy and paste the following code into your console and press enter: <strong>?html_table</strong></p>
 <p>One effective method for finding the right HTML table involves pulling up the object (i.e., goffstats) from the environment and then examining the value column to find the correct dimensions of the table you want from the website you scraped (i.e., the wiki page). For example, head 
 <a href="https://en.wikipedia.org/wiki/Jared_Goff" target="_blank" rel="noopener">here</a> and scroll down to NFL career statistics then regular season and count the rows and columns. After you have a decent idea of the dimensions, head to your object (i.e., goff_stats) and try to match the dimensions. Object <strong>[[6]]</strong> with the <strong>value 10 x 23</strong> is the one we want so we create a new object with that information.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>career_stats <span style="color:#000;font-weight:bold">&lt;-</span> goffstats[[6]]
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>career_stats <span style="color:#000;font-weight:bold">&lt;-</span> goffstats[[7]]
 </span></span></code></pre></div><p><img src="tibble.jpg" alt=""></p>
 <p>🎉 Alright, we have officially scraped the website and got our HTML table! 🎉</p>
 
