@@ -59,7 +59,7 @@ The output will be a data frame with the following columns:
 
 **norm3**: Another slight variation of the normal distribution
 
-**binom**: Binomial distribution
+**bern**: Bernoulli distribution
 
 **neg**: Negative binomial distribution
 
