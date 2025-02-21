@@ -77,6 +77,8 @@ The output will be a data frame with the following columns:
 
 **t_dist**: Student's t-distribution
 
+**f_dist**: F-distribution
+
 
 ### Example - Negative Binomial Distribution
 
