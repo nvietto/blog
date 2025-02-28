@@ -37,7 +37,13 @@ colors(distinct = TRUE)
 
 ```
 
-![](cols.jpg)
+<p style="text-align: center;">
+  <img src="cols.jpg" alt="Centered Image">
+</p>
+
+
+
+
 
 
 Use show_col and col2hcl to show the color code.
@@ -49,7 +55,11 @@ show_col(col2hcl("royalblue"))
 
 ```
 
-![](blue.jpg)
+
+<p style="text-align: center;">
+  <img src="blue.jpg" alt="Centered Image">
+</p>
+
 
 
 Boom! Now that we've got our color code, let's explore further. There's a similar method for looking up multiple color codes and adjusting the hue, chroma, and luminance if the exact color you want isn't known.
@@ -61,8 +71,9 @@ tomatoes <- rep("tomato", 6) # we have to create a vector here to allow multiple
 show_col(col2hcl(tomatoes, h = seq( 0, 25, length = 6))) # we are modifying our hue here
 
 ```
-
-![](tomato.jpg)
+<p style="text-align: center;">
+  <img src="tomato.jpg" alt="Centered Image">
+</p>
 
 Lets break this down. 
 
@@ -87,7 +98,10 @@ show_col(col2hcl(tomatoes, c = seq( 0, 25, length = 6)))
 
 ```
 
-![](chroma1.jpg)
+<p style="text-align: center;">
+  <img src="chroma1.jpg" alt="Centered Image">
+</p>
+
 
 Yikes, wouldn't want to eat those tomatoes. 
 
@@ -97,7 +111,10 @@ Lets max the argument out and see what happens.
 show_col(col2hcl(tomatoes, c = seq( 0, 100, length = 6))) 
 
 ```
-![](chroma2.jpg)
+
+<p style="text-align: center;">
+  <img src="chroma2.jpg" alt="Centered Image">
+</p>
 
 A better variation to choose from.
 
@@ -112,7 +129,10 @@ show_col(col2hcl(tomatoes, l = seq( 0, 100, length = 6)))
 
 ```
 
-![](lum.jpg)
+<p style="text-align: center;">
+  <img src="lum.jpg" alt="Centered Image">
+</p>
+
 
 BA1F00 and F85D3F are looking like suitable 🍅s. 
 

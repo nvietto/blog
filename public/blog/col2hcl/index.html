@@ -153,10 +153,14 @@
     </svg></a>
 </h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">colors</span>(distinct <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">TRUE</span>)
-</span></span></code></pre></div><p><img src="cols.jpg" alt=""></p>
+</span></span></code></pre></div><p style="text-align: center;">
+  <img src="cols.jpg" alt="Centered Image">
+</p>
 <p>Use show_col and col2hcl to show the color code.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">show_col</span>(<span style="color:#900;font-weight:bold">col2hcl</span>(<span style="color:#d14">&#34;royalblue&#34;</span>))
-</span></span></code></pre></div><p><img src="blue.jpg" alt=""></p>
+</span></span></code></pre></div><p style="text-align: center;">
+  <img src="blue.jpg" alt="Centered Image">
+</p>
 <p>Boom! Now that we&rsquo;ve got our color code, let&rsquo;s explore further. There&rsquo;s a similar method for looking up multiple color codes and adjusting the hue, chroma, and luminance if the exact color you want isn&rsquo;t known.</p>
 
 
@@ -170,7 +174,9 @@
 </h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span>tomatoes <span style="color:#000;font-weight:bold">&lt;-</span> <span style="color:#900;font-weight:bold">rep</span>(<span style="color:#d14">&#34;tomato&#34;</span>, <span style="color:#099">6</span>) <span style="color:#998;font-style:italic"># we have to create a vector here to allow multiple to show</span>
 </span></span><span style="display:flex;"><span><span style="color:#900;font-weight:bold">show_col</span>(<span style="color:#900;font-weight:bold">col2hcl</span>(tomatoes, h <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">seq</span>( <span style="color:#099">0</span>, <span style="color:#099">25</span>, length <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">6</span>))) <span style="color:#998;font-style:italic"># we are modifying our hue here</span>
-</span></span></code></pre></div><p><img src="tomato.jpg" alt=""></p>
+</span></span></code></pre></div><p style="text-align: center;">
+  <img src="tomato.jpg" alt="Centered Image">
+</p>
 <p>Lets break this down.</p>
 <p><strong>show_col</strong> allows the visualization to occur in R.</p>
 <p><strong>col2hcl</strong>  is responsible for providing us with the hexadecimal codes for colors.</p>
@@ -185,16 +191,22 @@
 <p>We can also modify our <strong>chroma</strong> and/or <strong>luminance</strong>.</p>
 <p>If you want the intensity to change we can use the chroma argument. We use a similar process as before but this time we use “c”. The range for chroma is [0, 100].</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">show_col</span>(<span style="color:#900;font-weight:bold">col2hcl</span>(tomatoes, c <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">seq</span>( <span style="color:#099">0</span>, <span style="color:#099">25</span>, length <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">6</span>))) 
-</span></span></code></pre></div><p><img src="chroma1.jpg" alt=""></p>
+</span></span></code></pre></div><p style="text-align: center;">
+  <img src="chroma1.jpg" alt="Centered Image">
+</p>
 <p>Yikes, wouldn&rsquo;t want to eat those tomatoes.</p>
 <p>Lets max the argument out and see what happens.</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">show_col</span>(<span style="color:#900;font-weight:bold">col2hcl</span>(tomatoes, c <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">seq</span>( <span style="color:#099">0</span>, <span style="color:#099">100</span>, length <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">6</span>))) 
-</span></span></code></pre></div><p><img src="chroma2.jpg" alt=""></p>
+</span></span></code></pre></div><p style="text-align: center;">
+  <img src="chroma2.jpg" alt="Centered Image">
+</p>
 <p>A better variation to choose from.</p>
 <p>If we want to look at variations in the intensity of our 🍅s we can use the <strong>luminance</strong> or <strong>l</strong> argument.</p>
 <p>Our luminescence range is [0, 100]</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-r" data-lang="r"><span style="display:flex;"><span><span style="color:#900;font-weight:bold">show_col</span>(<span style="color:#900;font-weight:bold">col2hcl</span>(tomatoes, l <span style="color:#000;font-weight:bold">=</span> <span style="color:#900;font-weight:bold">seq</span>( <span style="color:#099">0</span>, <span style="color:#099">100</span>, length <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">6</span>))) 
-</span></span></code></pre></div><p><img src="lum.jpg" alt=""></p>
+</span></span></code></pre></div><p style="text-align: center;">
+  <img src="lum.jpg" alt="Centered Image">
+</p>
 <p>BA1F00 and F85D3F are looking like suitable 🍅s.</p>
 
 
