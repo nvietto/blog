@@ -93,13 +93,13 @@ enableEmoji = true
       icon_pack = "fab"
       url       = "http://www.linkedin.com/in/nicholas-vietto"
   [[params.social]]
+      icon      = "bold"
+      icon_pack = "fas"
+      url       = "https://bsky.app/profile/nvietto.bsky.social"
+  [[params.social]]
       icon      = "mastodon"
       icon_pack = "fab"
       url       = "https://fosstodon.org/@nvietto"
-   [[params.social]]
-      icon      = "cloud"
-      icon_pack = "fas"
-      url       = "https://bsky.app/profile/nvietto.bsky.social"
   [[params.social]]
       icon      = "orcid" 
       icon_pack = "ai"
