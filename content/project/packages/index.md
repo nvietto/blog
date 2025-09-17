@@ -42,7 +42,7 @@ GitHub: https://nvietto.github.io/Rdune/
 </p>
 
 
-{nopunintended} is a package designed to take your mind off coding with puns from ['No Pun Intended: Volume Too'](https://thelastofus.fandom.com/wiki/No_Pun_Intended:_Volume_Too) in the show/video game ['The Last of Us'](https://www.hbo.com/the-last-of-us). 
+{nopunintended} is a package designed to take your mind off coding with puns from ['No Pun Intended: Volume Too'](https://thelastofus.fandom.com/wiki/No_Pun_Intended:_Volume_Too) in the show/video game ['The Last of Us'](https://www.hbo.com/the-last-of-us). The code structure and creative inspiration were drawn from the [{meditations}](https://github.com/jacobkap/meditations) package.
 
 GitHub: https://github.com/nvietto/nopunintended
 
