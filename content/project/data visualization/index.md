@@ -45,11 +45,3 @@ TidyTuesday is a weekly social data challenge in R, where participants use a new
   <img src="Week28.jpg" alt="Centered Image">
 </p>
 
-<p style="text-align: center;">
-  <img src="Week27.jpg" alt="Centered Image">
-</p>
-
-<p style="text-align: center;">
-  <img src="Week23.jpg" alt="Centered Image">
-</p>
-
