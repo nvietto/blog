@@ -105,9 +105,13 @@ enableEmoji = true
       icon_pack = "ai"
       url       = "https://orcid.org/0000-0001-8835-2622"
   [[params.social]]
-      icon      = "cv" 
-      icon_pack = "ai"
-      url       = "/img/Resume.pdf"
+    icon      = "cv"
+    icon_pack = "ai"
+    url       = "/img/CV.pdf"
+  [[params.social]]
+    icon = "file-pdf"
+    icon_pack = "fas"
+    url       = "/img/Resume.pdf"
   [[params.social]]
       icon      = "rss" 
       icon_pack = "fas"
