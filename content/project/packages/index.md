@@ -9,6 +9,8 @@ draft: false
 layout: single
 ---
 
+These are the R packages I've developed, ranging from tools for generating sample data and color palettes for {ggplot2} to a couple of more lighthearted side projects. Each includes a brief description and links to CRAN and/or GitHub. All of my published packages are also available on [R-Universe](https://nvietto.r-universe.dev/packages).
+
 ### [samplezoo](https://nvietto.github.io/samplezoo/)
 
 <p style="text-align: center;">
