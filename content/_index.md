@@ -8,7 +8,7 @@ If any of the content here saved you some time, please consider supporting the W
 
 <br>
 <br>
-Feel free to reach out at nvietto@proton.me"
+Feel free to reach out at nicholasvietto@gmail.com "
 images:
   - img/headshot.jpg
 image_left: false
