@@ -1,5 +1,5 @@
 ---
-title: "Data Visualizations"
+title: "Data Visualizations (Data Challenges)"
 subtitle: "Selected contributions to the #TidyTuesday data challenge"
 excerpt: "Contributions to the #TidyTuesday data challenge"
 weight: 7
